@@ -43,16 +43,17 @@ class App extends React.Component {
             });
     }
 
-    // findDataById(id, data) {
-    //     const activeId = id;
-    //     const jsonData = data;
-    //
-    //     jsonData.map(item => {
-    //         if(item.headline === activeId) {
-    //             console.log(activeId)
-    //         }
-    //     })
-    // }
+    findDataById(id, data) {
+        console.log('findDataById')
+        const activeId = id;
+        const jsonData = data;
+
+        jsonData.map(item => {
+            if(item.headline === activeId) {
+                console.log(activeId)
+            }
+        })
+    }
 
     componentDidMount() {
         this.setState({ isLoading: true });
@@ -71,7 +72,7 @@ class App extends React.Component {
         }
 
         const ProjectDetailWrapper = ({ match, location }) => {
-            // this.findDataById(match.params.id, data);
+            this.findDataById(match.params.id, data);
 
             return (
                 <ProjectDetail params={{ match, location, data }}/>
