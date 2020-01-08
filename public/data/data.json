@@ -3,17 +3,22 @@
         "body": [
             {
                 "_uid": "BUY6Drn9e1",
-                "component": "foo",
-                "headline": "Doortje"
-            },
-            {
-                "_uid": "gJZoSLkfZV",
-                "component": "bar",
-                "title": "Bar"
+                "component": "projectListItem",
+                "headline": "Doortje",
+                "content" : [
+                    {
+                        "hero" : {
+                            "img" : 123
+                        }
+                    },
+                    {
+                        "paragraph" : "lorem ipsum dolor sit amet"
+                    }
+                ]
             },
             {
                 "_uid": "X1JAfdsZxy",
-                "component": "foo",
+                "component": "projectListItem",
                 "headline": "Another headline"
             }
         ]
