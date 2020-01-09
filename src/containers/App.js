@@ -46,10 +46,9 @@ class App extends React.Component {
         return data.filter(item => item.headline === activeId);
     }
 
-    componentDidMount() {
-        console.log('componentDidMount')
+    componentWillMount() {
+        console.log('componentWillMount')
         this.setState({ isLoading: true });
-        console.log('setState isLoading true')
         this.getJson();
         console.log('got json');
     }
@@ -76,10 +75,12 @@ class App extends React.Component {
         const ProjectDetailWrapper = ({ match, location }) => {
             let matchingData = this.findDataById(match.params.id, data);
             console.log('matchingData');
-            console.log(matchingData);
+            console.log(matchingData[0]);
+
+            let content = matchingData[0];
 
             return (
-                <ProjectDetail params={{ match, location, data }}/>
+                <ProjectDetail params={{ match, location, content }}/>
             );
         };
 

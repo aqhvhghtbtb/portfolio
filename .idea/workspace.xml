@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a789f5-7c33-4f4d-b13a-433ee0eb4707" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Hero/Hero.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Paragraph/Paragraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Project/ProjectDetail/ProjectDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project/ProjectDetail/ProjectDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +73,7 @@
       <workItem from="1578336796037" duration="5245000" />
       <workItem from="1578506724622" duration="2255000" />
       <workItem from="1578511044025" duration="4590000" />
-      <workItem from="1578587259481" duration="1824000" />
+      <workItem from="1578587259481" duration="4525000" />
     </task>
     <servers />
   </component>
@@ -91,5 +97,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1578088494185" />
+    <state x="629" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578601123010">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="629" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1578601123010" />
   </component>
 </project>

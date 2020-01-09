@@ -1,12 +1,10 @@
 import React from "react";
+import Components from "../../../components";
 
 const ProjectDetail = (props) => {
     return (
-        <div>
-            <h3>{props.params.headline}</h3>
-            <p>
-                {props.params.match.url}
-            </p>
+        <div className="main">
+            {props.params.content.components.map(block => Components(block))}
         </div>
     );
 };

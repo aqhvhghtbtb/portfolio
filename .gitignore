@@ -4,6 +4,7 @@ dist/
 npm-debug.log
 yarn-error.log
 .env
+.zip
 
 # Editor directories and files
 *.json

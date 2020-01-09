@@ -2,22 +2,30 @@
     "content": {
         "body": [
             {
-                "_uid": "BUY6Drn9e1",
+                "_uid": "95979393d66d7f32e55a5be74f12f4f58a79be08",
                 "component": "projectListItem",
                 "headline": "Doortje",
-                "content" : [
+                "components" : [
                     {
-                        "hero" : {
-                            "img" : 123
+                        "component" : "hero",
+                        "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "data" : {
+                            "img" : "plaatje",
+                            "title" : "Ik ben een hero"
                         }
                     },
                     {
-                        "paragraph" : "lorem ipsum dolor sit amet"
+                        "component" : "paragraph",
+                        "_uid": "2f4dad86b8e48169a7cf005a9b31ae0f066fa20b",
+                        "data" : {
+                            "title" : "Ik ben een paragraph",
+                            "body" : "Lorem ipsum dolor sit amet"
+                        }
                     }
                 ]
             },
             {
-                "_uid": "X1JAfdsZxy",
+                "_uid": "b5297d4047844d072a543cb2fed006ff324065b4",
                 "component": "projectListItem",
                 "headline": "Another headline"
             }
