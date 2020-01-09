@@ -1,10 +1,5 @@
 import React from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 
 import withClass from "../hoc/withClass";
 import Aux from "../hoc/Aux";
@@ -25,7 +20,8 @@ class App extends React.Component {
     }
 
     getJson(){
-        fetch(`./data/data.json`)
+        console.log('getJson')
+        fetch(`/data/data.json`)
             .then( (response) => {
                 return response.json()
             })
@@ -36,28 +32,26 @@ class App extends React.Component {
                               })
             })
             .catch(error => {
+                console.log(error);
                 this.setState({
                                   error,
                                   isLoading: false
-                              })
+                              });
             });
     }
 
     findDataById(id, data) {
         console.log('findDataById')
         const activeId = id;
-        const jsonData = data;
-
-        jsonData.map(item => {
-            if(item.headline === activeId) {
-                console.log(activeId)
-            }
-        })
+        return data.filter(item => item.headline === activeId);
     }
 
     componentDidMount() {
+        console.log('componentDidMount')
         this.setState({ isLoading: true });
+        console.log('setState isLoading true')
         this.getJson();
+        console.log('got json');
     }
 
     render() {
@@ -71,8 +65,18 @@ class App extends React.Component {
             return <p>{error}</p>
         }
 
+        console.log('render')
+
+        const ErrorWrapper = ({ location }) => (
+            <div>
+                <h3>No match for <code>{location.pathname}</code></h3>
+            </div>
+        );
+
         const ProjectDetailWrapper = ({ match, location }) => {
-            this.findDataById(match.params.id, data);
+            let matchingData = this.findDataById(match.params.id, data);
+            console.log('matchingData');
+            console.log(matchingData);
 
             return (
                 <ProjectDetail params={{ match, location, data }}/>
@@ -90,8 +94,11 @@ class App extends React.Component {
                 <Header/>
                 <Router>
                     <Link to="/">Home</Link>
-                    <Route exact path="/" component={ProjectListWrapper} />
-                    <Route exact path="/project/:id" component={ProjectDetailWrapper} />
+                    <Switch>
+                        <Route exact path="/" component={ProjectListWrapper} />
+                        <Route exact path="/project/:id" component={ProjectDetailWrapper} />
+                        <Route component={ErrorWrapper} />
+                    </Switch>
                 </Router>
                 <Footer/>
             </Aux>
