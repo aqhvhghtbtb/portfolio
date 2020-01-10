@@ -21,13 +21,94 @@
                             "title" : "Ik ben een paragraph",
                             "body" : "Lorem ipsum dolor sit amet"
                         }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad86b8e38169a7cf005a9b31ae0f066fa20b",
+                        "data" : {
+                            "title" : "Ik ben een paragraph",
+                            "body" : "Lorem ipsum dolor sit amet"
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad86b8e48169a7cf005a9b30ae0f066fa20b",
+                        "data" : {
+                            "title" : "Ik ben een paragraph",
+                            "body" : "Lorem ipsum dolor sit amet"
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad86b8e48169a7cf805a9b31ae0f066fa20b",
+                        "data" : {
+                            "title" : "Ik ben een paragraph",
+                            "body" : "Lorem ipsum dolor sit amet"
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad86b8e48169a7cf004a9b31ae0f066fa20b",
+                        "data" : {
+                            "title" : "Ik ben een paragraph",
+                            "body" : "Lorem ipsum dolor sit amet"
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad86b8e48169a7cf002a9b31ae0f066fa20b",
+                        "data" : {
+                            "title" : "Ik ben een paragraph",
+                            "body" : "Lorem ipsum dolor sit amet"
+                        }
+                    }
+
+                ]
+            },
+            {
+                "_uid": "95979393d66d7f32e55a5be74f12f4f58a79be18",
+                "component": "projectListItem",
+                "headline": "Doortje",
+                "components" : [
+                    {
+                        "component" : "hero",
+                        "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "data" : {
+                            "img" : "plaatje",
+                            "title" : "Ik ben een hero"
+                        }
                     }
                 ]
             },
             {
-                "_uid": "b5297d4047844d072a543cb2fed006ff324065b4",
+                "_uid": "95978393d66d7f32e55a5be74f12f4f58a79be18",
                 "component": "projectListItem",
-                "headline": "Another headline"
+                "headline": "Doortje",
+                "components" : [
+                    {
+                        "component" : "hero",
+                        "_uid": "da39a4ee5e6b4b0d3255bfef95601890afd80709",
+                        "data" : {
+                            "img" : "plaatje",
+                            "title" : "Ik ben een hero"
+                        }
+                    }
+                ]
+            },
+            {
+                "_uid": "95979093d66d7f32e55a5be74f12f4f58a79be18",
+                "component": "projectListItem",
+                "headline": "Doortje",
+                "components" : [
+                    {
+                        "component" : "hero",
+                        "_uid": "da39a3ee5e6b4b0d3254bfef95601890afd80709",
+                        "data" : {
+                            "img" : "plaatje",
+                            "title" : "Ik ben een hero"
+                        }
+                    }
+                ]
             }
         ]
     }

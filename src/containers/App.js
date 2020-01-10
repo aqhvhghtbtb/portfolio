@@ -92,19 +92,18 @@ class App extends React.Component {
 
         return (
             <Aux>
-                <Header/>
                 <Router>
-                    <Link to="/">Home</Link>
+                    <Header/>
                     <Switch>
                         <Route exact path="/" component={ProjectListWrapper} />
                         <Route exact path="/project/:id" component={ProjectDetailWrapper} />
                         <Route component={ErrorWrapper} />
                     </Switch>
+                    <Footer/>
                 </Router>
-                <Footer/>
             </Aux>
         );
     }
 }
 
-export default withClass(App, 'page');
+export default App;
