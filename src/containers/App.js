@@ -56,7 +56,7 @@ class App extends React.Component {
             modalIsActive: isActive,
         },
 () => {
-            document.body.classList.toggle('active', this.state.modalIsActive);
+            document.body.classList.toggle('overlay-is-active', this.state.modalIsActive);
         });
     }
 

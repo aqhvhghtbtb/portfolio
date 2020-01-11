@@ -7,10 +7,11 @@ $btnHeight : 50px;
     position: fixed;
     top: calc(100% - #{$btnHeight});
     bottom: 0;
-    transition: top 0.25s;
+    transition: top 0.5s cubic-bezier(.83,.05,.16,.91);
+    will-change: top;
 
-    &.active {
-        top: 0;
+    &.is-active {
+        top: 20vh;
     }
 
     &__item {

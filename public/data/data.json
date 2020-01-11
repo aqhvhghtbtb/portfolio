@@ -110,6 +110,11 @@
                     }
                 ]
             }
-        ]
+        ],
+        "footer" : {
+            "_uid": "95979093d66d7f32e55a5be74f12f4f58a89be18",
+            "component": "footer",
+            "headline": "Ik ben een footer"
+        }
     }
 }

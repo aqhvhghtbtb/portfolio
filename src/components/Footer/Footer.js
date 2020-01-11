@@ -27,7 +27,7 @@ class Footer extends React.Component {
 
     render() {
         return (
-            <div className={"footer js-footer " + (this.state.isActive ? "active" :"")}>
+            <div className={"footer js-footer " + (this.state.isActive ? "is-active" :"")}>
                 <button className="footer__btn js-contact-toggle" onClick={this.handleClick}>
                     Contact me
                 </button>
