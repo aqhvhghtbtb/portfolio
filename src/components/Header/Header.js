@@ -4,16 +4,9 @@ import {BrowserRouter as Router, Link, Route, Switch, NavLink} from "react-route
 function Header(props) {
     return (
         <div className="header">
-            <div className="header__item">
-                <NavLink exact to="/" activeClassName="active" className="header__link">
-                    Portfolio
-                </NavLink>
-            </div>
-            <div className="header__item">
-                <Link to="/" className="header__link">
-                    Contact me
-                </Link>
-            </div>
+            <h1>
+                Doortje Spanjerberg
+            </h1>
         </div>
     )
 }

@@ -16,7 +16,11 @@ class App extends React.Component {
             data: [],
             isLoading: false,
             error: null,
-        }
+            modalIsActive: false,
+        };
+
+        //bind otherwise react can't find it
+        this.toggleModalBg = this.toggleModalBg.bind(this);
     }
 
     getJson(){
@@ -27,16 +31,16 @@ class App extends React.Component {
             })
             .then( (json) => {
                 this.setState({
-                                  data: json.content.body,
-                                  isLoading: false
-                              })
+                      data: json.content.body,
+                      isLoading: false
+                  })
             })
             .catch(error => {
                 console.log(error);
                 this.setState({
-                                  error,
-                                  isLoading: false
-                              });
+                      error,
+                      isLoading: false
+                  });
             });
     }
 
@@ -44,6 +48,16 @@ class App extends React.Component {
         console.log('findDataById')
         const activeId = id;
         return data.filter(item => item.headline === activeId);
+    }
+
+    toggleModalBg(isActive) {
+        console.log('toggleModalBg');
+        this.setState({
+            modalIsActive: isActive,
+        },
+() => {
+            document.body.classList.toggle('active', this.state.modalIsActive);
+        });
     }
 
     componentWillMount() {
@@ -99,7 +113,7 @@ class App extends React.Component {
                         <Route exact path="/project/:id" component={ProjectDetailWrapper} />
                         <Route component={ErrorWrapper} />
                     </Switch>
-                    <Footer/>
+                    <Footer getActiveState={this.toggleModalBg}/>
                 </Router>
             </Aux>
         );

@@ -1,0 +1,35 @@
+$btnHeight : 50px;
+
+.footer {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    position: fixed;
+    top: calc(100% - #{$btnHeight});
+    bottom: 0;
+    transition: top 0.25s;
+
+    &.active {
+        top: 0;
+    }
+
+    &__item {
+        flex: 1 0 100%;
+        text-align: center;
+    }
+
+    &__btn {
+        display: block;
+        color: #fff;
+        background-color: purple;
+        min-height: $btnHeight;
+    }
+
+    &__content {
+        background-color: red;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+}
