@@ -31,19 +31,21 @@ class Footer extends React.Component {
 
     render() {
         const socialList = this.props.data.socialList.items.map((item, key) =>
-              <li key={this.generateUniqueKey(item)}>
-                  {item}
+              <li key={this.generateUniqueKey(item.url)} className={"footer__listitem" + item.class}>
+                  <a href={item.url}>
+                      {item.name}
+                  </a>
               </li>
         );
 
         const skillsPriList = this.props.data.skills_pri.items.map((item, key) =>
-             <li key={this.generateUniqueKey(item)}>
+             <li key={this.generateUniqueKey(item)} className="footer__listitem">
                  {item}
              </li>
         );
 
         const skillsSecList = this.props.data.skills_sec.items.map((item, key) =>
-             <li key={this.generateUniqueKey(item)}>
+             <li key={this.generateUniqueKey(item)} className="footer__listitem">
                  {item}
              </li>
         );

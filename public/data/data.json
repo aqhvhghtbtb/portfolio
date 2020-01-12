@@ -118,8 +118,21 @@
             "socialList" : {
                 "title" : "Contact",
                 "items" : [
-                    "dodomew@gmail.com",
-                    "www.linkedin.com"
+                    {
+                        "url" : "mailto:dodomew@gmail.com",
+                        "name" : "Email",
+                        "class" : "email"
+                    },
+                    {
+                        "url" : "www.linkedin.com",
+                        "name" : "LinkedIn",
+                        "class" : "linkedin"
+                    },
+                    {
+                        "url" : "www.github.com/Dodomew",
+                        "name" : "GitHub",
+                        "class" : "github"
+                    }
                 ]
             },
             "skills_pri" : {
