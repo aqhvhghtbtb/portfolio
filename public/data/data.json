@@ -1,6 +1,6 @@
 {
     "content": {
-        "body": [
+        "main": [
             {
                 "_uid": "95979393d66d7f32e55a5be74f12f4f58a79be08",
                 "component": "projectListItem",
@@ -114,7 +114,29 @@
         "footer" : {
             "_uid": "95979093d66d7f32e55a5be74f12f4f58a89be18",
             "component": "footer",
-            "headline": "Ik ben een footer"
+            "headline": "Contact me",
+            "socialList" : {
+                "title" : "Contact",
+                "items" : [
+                    "dodomew@gmail.com",
+                    "www.linkedin.com"
+                ]
+            },
+            "skills_pri" : {
+                "title" : "Primary skills",
+                "items" : [
+                    "HTML5",
+                    "CSS3 & Sass",
+                    "ES5/ES6"
+                ]
+            },
+            "skills_sec" : {
+                "title" : "Secondary skills",
+                "items" : [
+                    "React JS",
+                    "Node JS"
+                ]
+            }
         }
     }
 }

@@ -6,8 +6,6 @@
       <change beforePath="$PROJECT_DIR$/public/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_page.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,8 @@
       <workItem from="1578587259481" duration="4701000" />
       <workItem from="1578687115016" duration="1746000" />
       <workItem from="1578690291413" duration="4741000" />
-      <workItem from="1578773627093" duration="6746000" />
+      <workItem from="1578773627093" duration="7412000" />
+      <workItem from="1578859856892" duration="2509000" />
     </task>
     <servers />
   </component>
@@ -98,6 +97,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1578695691806" />
+    <state x="498" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578861817797">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="498" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1578861817797" />
     <state x="629" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578601123010">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

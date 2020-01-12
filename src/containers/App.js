@@ -31,7 +31,7 @@ class App extends React.Component {
             })
             .then( (json) => {
                 this.setState({
-                      data: json.content.body,
+                      data: json.content,
                       isLoading: false
                   })
             })
@@ -87,7 +87,7 @@ class App extends React.Component {
         );
 
         const ProjectDetailWrapper = ({ match, location }) => {
-            let matchingData = this.findDataById(match.params.id, data);
+            let matchingData = this.findDataById(match.params.id, data.main);
             console.log('matchingData');
             console.log(matchingData[0]);
 
@@ -100,7 +100,7 @@ class App extends React.Component {
 
         const ProjectListWrapper = () => {
             return (
-                <ProjectList data={data} />
+                <ProjectList data={data.main} />
             );
         };
 
@@ -113,7 +113,7 @@ class App extends React.Component {
                         <Route exact path="/project/:id" component={ProjectDetailWrapper} />
                         <Route component={ErrorWrapper} />
                     </Switch>
-                    <Footer getActiveState={this.toggleModalBg}/>
+                    <Footer getActiveState={this.toggleModalBg} data={data.footer}/>
                 </Router>
             </Aux>
         );

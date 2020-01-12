@@ -25,17 +25,57 @@ class Footer extends React.Component {
         });
     }
 
+    generateUniqueKey(pre) {
+        return `${ pre }_${ new Date().getTime() }`;
+    }
+
     render() {
+        const socialList = this.props.data.socialList.items.map((item, key) =>
+              <li key={this.generateUniqueKey(item)}>
+                  {item}
+              </li>
+        );
+
+        const skillsPriList = this.props.data.skills_pri.items.map((item, key) =>
+             <li key={this.generateUniqueKey(item)}>
+                 {item}
+             </li>
+        );
+
+        const skillsSecList = this.props.data.skills_sec.items.map((item, key) =>
+             <li key={this.generateUniqueKey(item)}>
+                 {item}
+             </li>
+        );
+
         return (
             <div className={"footer js-footer " + (this.state.isActive ? "is-active" :"")}>
                 <button className="footer__btn js-contact-toggle" onClick={this.handleClick}>
-                    Contact me
+                    {this.props.data.headline}
                 </button>
                 <div className="footer__content">
-                    <h3>Hi</h3>
-                    <p>
-                        Proin consectetur turpis ante, a molestie ligula sagittis id. Phasellus venenatis ex a nunc lobortis eleifend. Proin pharetra sapien nec orci accumsan egestas. Donec a sem nec magna porttitor porta sit amet ut ligula. Donec turpis nibh, interdum blandit lacinia ut, consectetur sit amet felis. Pellentesque vestibulum laoreet neque eu mattis. Cras vulputate tincidunt neque in condimentum. Sed tincidunt erat ac tortor tincidunt, id hendrerit lacus efficitur. Vestibulum sagittis ultricies sollicitudin. Cras auctor elit vel dolor mattis vestibulum. In hac habitasse platea dictumst. Vivamus ornare nisl ut odio euismod rhoncus. Aenean vel enim accumsan, porttitor nisl eu, efficitur est.
-                    </p>
+                    <h3>
+                        {this.props.data.socialList.title}
+                    </h3>
+                    <ul className="footer__list">
+                        {socialList}
+                    </ul>
+                </div>
+                <div className="footer__content">
+                    <h3>
+                        {this.props.data.skills_pri.title}
+                    </h3>
+                    <ul className="footer__list">
+                        {skillsPriList}
+                    </ul>
+                </div>
+                <div className="footer__content">
+                    <h3>
+                        {this.props.data.skills_sec.title}
+                    </h3>
+                    <ul className="footer__list">
+                        {skillsSecList}
+                    </ul>
                 </div>
             </div>
         );
