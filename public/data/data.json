@@ -4,7 +4,13 @@
             {
                 "_uid": "95979393d66d7f32e55a5be74f12f4f58a79be08",
                 "component": "projectListItem",
-                "headline": "Doortje",
+                "headline": "Action",
+                "thumbnail" : "https://via.placeholder.com/100",
+                "metaList" : [
+                    "HTML5",
+                    "CSS3/SASS",
+                    "JS(ES5)"
+                ],
                 "components" : [
                     {
                         "component" : "hero",
@@ -18,7 +24,7 @@
                         "component" : "paragraph",
                         "_uid": "2f4dad86b8e48169a7cf005a9b31ae0f066fa20b",
                         "data" : {
-                            "title" : "Ik ben een paragraph",
+                            "title" : "Action de site",
                             "body" : "Lorem ipsum dolor sit amet"
                         }
                     },
@@ -68,7 +74,13 @@
             {
                 "_uid": "95979393d66d7f32e55a5be74f12f4f58a79be18",
                 "component": "projectListItem",
-                "headline": "Doortje",
+                "headline": "Defensie",
+                "thumbnail" : "https://via.placeholder.com/100",
+                "metaList" : [
+                    "HTML5",
+                    "CSS3/SASS",
+                    "JS(ES5)"
+                ],
                 "components" : [
                     {
                         "component" : "hero",
@@ -83,7 +95,13 @@
             {
                 "_uid": "95978393d66d7f32e55a5be74f12f4f58a79be18",
                 "component": "projectListItem",
-                "headline": "Doortje",
+                "headline": "Accenture",
+                "thumbnail" : "https://via.placeholder.com/100",
+                "metaList" : [
+                    "HTML5",
+                    "CSS3/SASS",
+                    "JS(ES5)"
+                ],
                 "components" : [
                     {
                         "component" : "hero",
@@ -98,7 +116,13 @@
             {
                 "_uid": "95979093d66d7f32e55a5be74f12f4f58a79be18",
                 "component": "projectListItem",
-                "headline": "Doortje",
+                "headline": "DNB",
+                "thumbnail" : "https://via.placeholder.com/100",
+                "metaList" : [
+                    "HTML5",
+                    "CSS3/SASS",
+                    "JS(ES5)"
+                ],
                 "components" : [
                     {
                         "component" : "hero",
@@ -140,7 +164,9 @@
                 "items" : [
                     "HTML5",
                     "CSS3 & Sass",
-                    "ES5/ES6"
+                    "ES5/ES6",
+                    "jQuery",
+                    "UX"
                 ]
             },
             "skills_sec" : {

@@ -4,9 +4,14 @@ import {BrowserRouter as Router, Link, Route, Switch, NavLink} from "react-route
 function Header(props) {
     return (
         <div className="header">
-            <h1>
-                Doortje Spanjerberg
-            </h1>
+            <div className="header__content">
+                <h2 className="header__byline">
+                    Doortje Spanjerberg
+                </h2>
+                <h3 className="header__title">
+                    Frontend Developer
+                </h3>
+            </div>
         </div>
     )
 }

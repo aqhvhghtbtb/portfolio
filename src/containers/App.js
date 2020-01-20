@@ -56,7 +56,7 @@ class App extends React.Component {
             modalIsActive: isActive,
         },
 () => {
-            document.body.classList.toggle('overlay-is-active', this.state.modalIsActive);
+            // document.body.classList.toggle('overlay-is-active', this.state.modalIsActive);
         });
     }
 
@@ -78,7 +78,7 @@ class App extends React.Component {
             return <p>{error}</p>
         }
 
-        console.log('render')
+        console.log('render1337')
 
         const ErrorWrapper = ({ location }) => (
             <div>

@@ -1,4 +1,4 @@
-$btnHeight : 50px;
+$btnHeight : 60px;
 
 .footer {
     display: flex;
@@ -9,9 +9,12 @@ $btnHeight : 50px;
     bottom: 0;
     transition: top 0.5s cubic-bezier(.83,.05,.16,.91);
     will-change: top;
+    background-color: $pri;
+    height: 100%;
 
     &.is-active {
         top: 20vh;
+        z-index: 10;
     }
 
     &__item {
@@ -22,15 +25,153 @@ $btnHeight : 50px;
     &__btn {
         display: block;
         color: #fff;
-        background-color: purple;
+        background-color: $sec;
         min-height: $btnHeight;
+        font-size: 24px;
     }
 
     &__content {
-        background-color: red;
+        background-color: $pri;
         position: relative;
         width: 100%;
-        height: 100%;
-        overflow: auto;
+        margin-bottom: 30px;
+        padding: 0 20px;
+
+        &:nth-of-type(1) {
+            margin-top: 30px;
+        }
+
+        &:last-child {
+            .footer {
+                &__list {
+                    padding: 0;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        border-bottom: 1px solid $sec;
+        padding-bottom: 30px;
+    }
+
+    &__listitem {
+        flex: 0 0 50%;
+
+        &:nth-child(odd) {
+            text-align: right;
+            padding-right: 8px;
+        }
+
+        &:nth-child(even) {
+            text-align: left;
+            padding-left: 8px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        border-bottom: 1px solid $sec;
+        padding-bottom: 24px;
+    }
+
+    &__social-item {
+        margin: 0 10px;
+    }
+
+    &__social-link {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: block;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(1.5);
+        }
+
+        &--email {
+            &::before {
+                @include icon-mail_b;
+                opacity: 1;
+            }
+
+            &::after {
+                @include icon-mail-w;
+                opacity: 0;
+            }
+        }
+
+        &--linkedin {
+            &::before {
+                @include icon-linkedin_b;
+                opacity: 1;
+            }
+
+            &::after {
+                @include icon-linkedin_w;
+                opacity: 0;
+            }
+        }
+
+        &--github {
+            &::before {
+                @include icon-github_b;
+                opacity: 1;
+            }
+
+            &::after {
+                @include icon-github_w;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@include media-query('desktop-sml') {
+    .footer {
+        position: relative;
+        top: initial;
+        bottom: initial;
+        display: flex;
+        flex-flow: row nowrap;
+
+        &__btn {
+            display: none;
+        }
+
+        &__social {
+            border: none;
+        }
+
+        &__content {
+            border: none;
+
+            &:nth-of-type(1) {
+                order: 3;
+                margin: 0;
+            }
+        }
+
+        &__list {
+            border: none;
+        }
     }
 }
