@@ -1,9 +1,15 @@
 import React from "react";
 
 const Paragraph = (props) => {
+    if(!props.block.data.body) {
+        return null;
+    }
+
+    const title = props.block.data.title ? <h4>{props.block.data.title}</h4> : null;
+
     return (
-        <div className="paragraph">
-            <h3>{props.block.data.title}</h3>
+        <div className="component cms-content">
+            {title}
             <p>
                 {props.block.data.body}
             </p>

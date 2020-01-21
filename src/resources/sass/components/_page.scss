@@ -13,6 +13,8 @@ body {
     position: relative;
     font-family: 'Helvetica Neue', sans-serif;
     color: $sec;
+    max-width: 1080px;
+    margin: 0 auto;
 
     &::before {
         content: '';
@@ -39,4 +41,10 @@ body {
     flex: 1;
     padding: 20px 20px 80px;
     position: relative;
+}
+
+@include media-query('desktop-sml') {
+    .main {
+        padding: 40px 0;
+    }
 }

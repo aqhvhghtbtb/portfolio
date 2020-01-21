@@ -21,3 +21,22 @@
         font-weight: bold;
     }
 }
+
+@include media-query('desktop-sml') {
+    .header {
+        padding: 0;
+
+        &__content {
+            line-height: 36px;
+            padding: 20px 0 16px;
+        }
+
+        &__byline {
+            font-size: 30px;
+        }
+
+        &__title {
+            font-size: 48px;
+        }
+    }
+}

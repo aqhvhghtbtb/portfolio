@@ -5,19 +5,22 @@
                 "_uid": "95979393d66d7f32e55a5be74f12f4f58a79be08",
                 "component": "projectListItem",
                 "headline": "Action",
-                "thumbnail" : "https://via.placeholder.com/100",
+                "description": "Europe’s major retail success story",
+                "thumbnail" : "https://via.placeholder.com/200",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
-                    "JS(ES5)"
+                    "JS(ES5)",
+                    "UX"
                 ],
                 "components" : [
                     {
                         "component" : "hero",
                         "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
                         "data" : {
-                            "img" : "plaatje",
-                            "title" : "Ik ben een hero"
+                            "desktopImg" : "https://via.placeholder.com/1080x420",
+                            "mobileImg" : "https://via.placeholder.com/480x240",
+                            "title" : "Action"
                         }
                     },
                     {
@@ -25,23 +28,29 @@
                         "_uid": "2f4dad86b8e48169a7cf005a9b31ae0f066fa20b",
                         "data" : {
                             "title" : "Action de site",
-                            "body" : "Lorem ipsum dolor sit amet"
+                            "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor urna nec magna aliquet pellentesque. Sed convallis, justo quis pretium semper, massa tortor consequat magna, dignissim dapibus ante diam a felis. Nam magna erat, euismod quis neque nec, dictum maximus ex. Vestibulum sodales eget sapien eu sollicitudin. "
                         }
                     },
                     {
-                        "component" : "paragraph",
+                        "component" : "list",
                         "_uid": "2f4dad86b8e38169a7cf005a9b31ae0f066fa20b",
                         "data" : {
-                            "title" : "Ik ben een paragraph",
-                            "body" : "Lorem ipsum dolor sit amet"
+                            "title" : "Ik ben een list",
+                            "body" : [
+                                "Listitem 1",
+                                "Listitem 2",
+                                "Listitem 3",
+                                "Listitem 4"
+                            ]
                         }
                     },
                     {
-                        "component" : "paragraph",
+                        "component" : "media",
                         "_uid": "2f4dad86b8e48169a7cf005a9b30ae0f066fa20b",
                         "data" : {
-                            "title" : "Ik ben een paragraph",
-                            "body" : "Lorem ipsum dolor sit amet"
+                            "title" : "Ik ben een media",
+                            "mobileImg" : "https://via.placeholder.com/480x240",
+                            "desktopImg" : "https://via.placeholder.com/1080x420"
                         }
                     },
                     {
@@ -75,7 +84,8 @@
                 "_uid": "95979393d66d7f32e55a5be74f12f4f58a79be18",
                 "component": "projectListItem",
                 "headline": "Defensie",
-                "thumbnail" : "https://via.placeholder.com/100",
+                "description": "Europe’s major retail success story",
+                "thumbnail" : "https://via.placeholder.com/150",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
@@ -96,7 +106,8 @@
                 "_uid": "95978393d66d7f32e55a5be74f12f4f58a79be18",
                 "component": "projectListItem",
                 "headline": "Accenture",
-                "thumbnail" : "https://via.placeholder.com/100",
+                "description": "Europe’s major retail success story",
+                "thumbnail" : "https://via.placeholder.com/120",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
@@ -117,7 +128,8 @@
                 "_uid": "95979093d66d7f32e55a5be74f12f4f58a79be18",
                 "component": "projectListItem",
                 "headline": "DNB",
-                "thumbnail" : "https://via.placeholder.com/100",
+                "description": "Europe’s major retail success story",
+                "thumbnail" : "https://via.placeholder.com/110",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
@@ -156,6 +168,11 @@
                         "url" : "www.github.com/Dodomew",
                         "name" : "GitHub",
                         "class" : "github"
+                    },
+                    {
+                        "url" : "www.google.com",
+                        "name" : "CV",
+                        "class" : "resume"
                     }
                 ]
             },

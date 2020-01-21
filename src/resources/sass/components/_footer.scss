@@ -105,6 +105,18 @@ $btnHeight : 60px;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%) scale(1.5);
+            transition: opacity 0.15s;
+        }
+
+        &:hover,
+        &:active {
+            &::before {
+                opacity: 0;
+            }
+
+            &::after {
+                opacity: 1;
+            }
         }
 
         &--email {
@@ -142,6 +154,18 @@ $btnHeight : 60px;
                 opacity: 0;
             }
         }
+
+        &--resume {
+            &::before {
+                @include icon-resume_b;
+                opacity: 1;
+            }
+
+            &::after {
+                @include icon-resume_w;
+                opacity: 0;
+            }
+        }
     }
 }
 
@@ -152,6 +176,8 @@ $btnHeight : 60px;
         bottom: initial;
         display: flex;
         flex-flow: row nowrap;
+        border-top: 4px solid $sec;
+        padding: 40px 0;
 
         &__btn {
             display: none;
@@ -163,15 +189,17 @@ $btnHeight : 60px;
 
         &__content {
             border: none;
+            margin: 0;
 
             &:nth-of-type(1) {
                 order: 3;
-                margin: 0;
+                margin-top: 0;
             }
         }
 
         &__list {
             border: none;
+            padding: 0;
         }
     }
 }

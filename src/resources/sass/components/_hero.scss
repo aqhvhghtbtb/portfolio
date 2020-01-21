@@ -1,0 +1,27 @@
+.hero {
+    position: relative;
+
+    &__content {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    &__title {
+        font-size: 30px;
+    }
+
+    &__media {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(50,50,50,0.33) 20%, rgba(0,0,0,0));
+        }
+    }
+}

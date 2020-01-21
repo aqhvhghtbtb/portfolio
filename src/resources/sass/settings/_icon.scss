@@ -1,5 +1,5 @@
 @mixin svg-common {
-	background-image: url("/images/icon-sprite-9eedcbbb.svg");
+	background-image: url("/images/icon-sprite-1c205c8e.svg");
 	background-repeat: no-repeat;
 }
 
@@ -29,7 +29,7 @@
 
 @mixin icon-linkedin_b {
 	@include svg-common;
-	background-position: 0 100%;
+	background-position: 0 50%;
 	width: 26px;
 	height: 26px;
 	text-indent: -9999em;
@@ -41,7 +41,7 @@
 
 @mixin icon-linkedin_w {
 	@include svg-common;
-	background-position: 50% 100%;
+	background-position: 50% 50%;
 	width: 26px;
 	height: 26px;
 	text-indent: -9999em;
@@ -65,7 +65,7 @@
 
 @mixin icon-mail_w {
 	@include svg-common;
-	background-position: 100% 56.62650602409638%;
+	background-position: 100% 31.756756756756754%;
 	width: 26px;
 	height: 18.8px;
 	text-indent: -9999em;
@@ -73,5 +73,29 @@
 
 %icon-mail_w {
 	@include icon-mail_w;
+}
+
+@mixin icon-resume_b {
+	@include svg-common;
+	background-position: 0 100%;
+	width: 26px;
+	height: 26px;
+	text-indent: -9999em;
+}
+
+%icon-resume_b {
+	@include icon-resume_b;
+}
+
+@mixin icon-resume_w {
+	@include svg-common;
+	background-position: 50% 100%;
+	width: 26px;
+	height: 26px;
+	text-indent: -9999em;
+}
+
+%icon-resume_w {
+	@include icon-resume_w;
 }
 

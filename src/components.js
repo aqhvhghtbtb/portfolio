@@ -1,10 +1,14 @@
 import React from "react";
 import Hero from "./components/Hero/Hero";
 import Paragraph from "./components/Paragraph/Paragraph";
+import List from "./components/List/List";
+import Media from "./components/Media/Media";
 
 const Components = {
     hero: Hero,
-    paragraph: Paragraph
+    paragraph: Paragraph,
+    list: List,
+    media: Media,
 };
 
 export default block => {

@@ -32,7 +32,7 @@ function projectListItem(props) {
                     {props.content.headline}
                 </Link>
                 <p className="listitem__text">
-                    Lorem ipsum dolor sit amet
+                    {props.content.description}
                 </p>
                 <ul className="listitem__meta">
                     {listItemMetaItems(props)}
