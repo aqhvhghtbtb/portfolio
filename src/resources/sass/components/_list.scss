@@ -1,0 +1,46 @@
+.list {
+
+}
+
+.listitem {
+    background-color: $ter;
+    margin-bottom: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+
+    &__media {
+        display: block;
+        flex: 0 0 100px;
+        background-size: cover;
+    }
+
+    &__bg {
+
+    }
+
+    &__content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    &__title {
+        font-size: 20px;
+        color: $sec;
+        font-weight: bold;
+    }
+
+    &__text {
+        font-size: 14px;
+    }
+
+    &__meta {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    &__meta-item {
+        color: gray;
+        font-size: 12px;
+    }
+}

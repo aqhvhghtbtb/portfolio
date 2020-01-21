@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 0 20px;
+
+    &__content {
+        line-height: 32px;
+        border-bottom: 4px solid $sec;
+        padding: 20px 0 8px;
+        width: 100%;
+    }
+
+    &__byline {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: bold;
+    }
+}

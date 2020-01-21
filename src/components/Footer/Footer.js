@@ -21,8 +21,13 @@ class Footer extends React.Component {
             isActive: !this.state.isActive,
         },
 () => {
-            this.props.getActiveState(this.state.isActive);
+            this.toggleModalBg()
         });
+    }
+
+    toggleModalBg() {
+        console.log('toggleModalBg');
+        document.body.classList.toggle('overlay-is-active', this.state.isActive);
     }
 
     generateUniqueKey(pre) {
@@ -30,6 +35,7 @@ class Footer extends React.Component {
     }
 
     render() {
+        console.log('render footer')
         const socialList = this.props.data.socialList.items.map((item, key) =>
               <li key={this.generateUniqueKey(item.url)} className="footer__social-item">
                   <a href={item.url} className={"footer__social-link footer__social-link--" + item.class}>

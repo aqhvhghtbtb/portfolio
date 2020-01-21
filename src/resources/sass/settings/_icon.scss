@@ -1,0 +1,77 @@
+@mixin svg-common {
+	background-image: url("/images/icon-sprite-9eedcbbb.svg");
+	background-repeat: no-repeat;
+}
+
+@mixin icon-github_b {
+	@include svg-common;
+	background-position: 0 0;
+	width: 26px;
+	height: 26px;
+	text-indent: -9999em;
+}
+
+%icon-github_b {
+	@include icon-github_b;
+}
+
+@mixin icon-github_w {
+	@include svg-common;
+	background-position: 50% 0;
+	width: 26px;
+	height: 26px;
+	text-indent: -9999em;
+}
+
+%icon-github_w {
+	@include icon-github_w;
+}
+
+@mixin icon-linkedin_b {
+	@include svg-common;
+	background-position: 0 100%;
+	width: 26px;
+	height: 26px;
+	text-indent: -9999em;
+}
+
+%icon-linkedin_b {
+	@include icon-linkedin_b;
+}
+
+@mixin icon-linkedin_w {
+	@include svg-common;
+	background-position: 50% 100%;
+	width: 26px;
+	height: 26px;
+	text-indent: -9999em;
+}
+
+%icon-linkedin_w {
+	@include icon-linkedin_w;
+}
+
+@mixin icon-mail_b {
+	@include svg-common;
+	background-position: 100% 0;
+	width: 26px;
+	height: 18.8px;
+	text-indent: -9999em;
+}
+
+%icon-mail_b {
+	@include icon-mail_b;
+}
+
+@mixin icon-mail_w {
+	@include svg-common;
+	background-position: 100% 56.62650602409638%;
+	width: 26px;
+	height: 18.8px;
+	text-indent: -9999em;
+}
+
+%icon-mail_w {
+	@include icon-mail_w;
+}
+

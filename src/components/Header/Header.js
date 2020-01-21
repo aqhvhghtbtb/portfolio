@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Link, Route, Switch, NavLink} from "react-router-dom";
 
 function Header(props) {
+    console.log('header')
     return (
         <div className="header">
             <div className="header__content">
