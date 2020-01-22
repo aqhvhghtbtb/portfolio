@@ -1,3 +1,5 @@
-// document.addEventListener("DOMContentLoaded",function(){
-//     initContact();
-// });
+document.addEventListener("reactReady",function(){
+    console.log('kek');
+    bindEvents();
+    animateElements();
+});

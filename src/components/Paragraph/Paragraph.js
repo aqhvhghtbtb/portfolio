@@ -8,7 +8,7 @@ const Paragraph = (props) => {
     const title = props.block.data.title ? <h4>{props.block.data.title}</h4> : null;
 
     return (
-        <div className="component cms-content">
+        <div className="component cms-content js-viewport-anim has-anim">
             {title}
             <p>
                 {props.block.data.body}

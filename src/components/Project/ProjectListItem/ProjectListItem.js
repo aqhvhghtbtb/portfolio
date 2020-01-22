@@ -1,6 +1,5 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
-import Footer from "../../Footer/Footer";
 
 const routeClickToChildLink = (e) => {
     const parent = e.currentTarget;
@@ -19,11 +18,18 @@ const listItemMetaItems = (props) => props.content.metaList.map((item) =>
 );
 
 function projectListItem(props) {
+    if(!props.content.headline) {
+        return null;
+    }
+
+    const thumbnail = props.content.thumbnail ? props.content.thumbnail : null;
+    const description = props.content.description ? <p className="listitem__text">{props.content.description}</p> : null;
+
     return (
-        <li className="listitem" onClick={routeClickToChildLink}>
+        <li className="listitem js-viewport-anim has-anim" onClick={routeClickToChildLink}>
             <div className="listitem__media" style={
                 {
-                    backgroundImage: `url(${props.content.thumbnail})`
+                    backgroundImage: `url(${thumbnail})`
                 }
             }>
             </div>
@@ -31,9 +37,7 @@ function projectListItem(props) {
                 <Link to={`/project/${props.content.headline}`} className="listitem__title">
                     {props.content.headline}
                 </Link>
-                <p className="listitem__text">
-                    {props.content.description}
-                </p>
+                {description}
                 <ul className="listitem__meta">
                     {listItemMetaItems(props)}
                 </ul>

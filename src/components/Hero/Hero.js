@@ -6,7 +6,7 @@ const Hero = (props) => {
     }
 
     return (
-        <div className="component hero">
+        <div className="component hero js-viewport-anim has-anim">
             <picture className="hero__media">
                 <source media="(min-width: 650px)" srcSet={props.block.data.desktopImg}></source>
                 <img src={props.block.data.mobileImg} alt="Kek" />

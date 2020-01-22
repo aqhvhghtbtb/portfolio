@@ -53,6 +53,11 @@ class App extends React.Component {
         console.log('got json');
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        let event = new Event('reactReady');
+        document.dispatchEvent(event);
+    }
+
     render() {
         const { data, isLoading, error } = this.state;
 
@@ -75,7 +80,6 @@ class App extends React.Component {
         const ProjectDetailWrapper = ({ match, location }) => {
             let matchingData = this.findDataById(match.params.id, data.main);
             console.log('matchingData');
-            console.log(matchingData[0]);
 
             let content = matchingData[0];
 

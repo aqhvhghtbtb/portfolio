@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ProjectListItem from "../ProjectListItem/ProjectListItem";
 
 const ProjectList = (props) => {
+    useEffect(() => {
+        const renderProjectList = new Event('initAnimations');
+        document.dispatchEvent(renderProjectList);
+        console.log('useEffect renderProjectList')
+    });
+
     return (
         <div className="main">
             <ul className="list">

@@ -6,7 +6,7 @@ const Media = (props) => {
     }
 
     return (
-        <div className="component media">
+        <div className="component media js-viewport-anim has-anim">
             <picture className="media__img">
                 <source media="(min-width: 650px)" srcSet={props.block.data.desktopImg}></source>
                 <img src={props.block.data.mobileImg} alt="Kek" />

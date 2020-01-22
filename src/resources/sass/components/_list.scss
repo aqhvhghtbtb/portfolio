@@ -1,3 +1,7 @@
+.list {
+    margin: 20px auto 0;
+}
+
 .listitem {
     background-color: $ter;
     margin-bottom: 10px;
@@ -5,10 +9,17 @@
     display: flex;
     flex-flow: row nowrap;
 
+    @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+            transition-delay: $i * 0.05s;
+        }
+    }
+
     &__media {
         display: block;
         flex: 0 0 100px;
         background-size: cover;
+        background-color: darken($pri, 10%);
     }
 
     &__content {
