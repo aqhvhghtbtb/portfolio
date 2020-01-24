@@ -5,6 +5,7 @@ npm-debug.log
 yarn-error.log
 .env
 .zip
+public/images/
 
 # Editor directories and files
 *.json

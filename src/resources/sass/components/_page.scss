@@ -7,10 +7,10 @@ body {
     flex-flow: column;
     min-height: 100%;
     position: relative;
-    font-family: 'Helvetica Neue', sans-serif;
     color: $sec;
     max-width: 1080px;
     margin: 0 auto;
+    @include font-pri-reg;
 
     &::before {
         content: '';

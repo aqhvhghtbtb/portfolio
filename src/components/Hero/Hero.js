@@ -5,15 +5,20 @@ const Hero = (props) => {
         return null;
     }
 
+    const bgImage = props.block.data.desktopImg;
+
     return (
         <div className="component hero js-viewport-anim has-anim">
-            <picture className="hero__media">
-                <source media="(min-width: 650px)" srcSet={props.block.data.desktopImg}></source>
-                <img src={props.block.data.mobileImg} alt="Kek" />
-            </picture>
+            <div className="hero__media" style={
+                {
+                    backgroundImage: `url(${bgImage})`
+                }}>
+            </div>
             <div className="hero__content">
                 <h3 className="hero__title">
-                    {props.block.data.title}
+                    <span className="hero__text">
+                        {props.block.data.title}
+                    </span>
                 </h3>
             </div>
         </div>

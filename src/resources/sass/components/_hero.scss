@@ -9,20 +9,64 @@
 
     &__title {
         font-size: 30px;
+        @include font-sec-black;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__text {
+        transform: translateY(100%);
+        opacity: 0;
+        animation: animTextFromTopToBottom 0.5s 0.33s forwards $easeInOutCubic;
+        display: block;
     }
 
     &__media {
         position: relative;
-        min-height: 140px;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 56.25%;
+        background-color: rgb(50,50,50);
 
-        &::before {
+        &::before,
+        &::after {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+        }
+
+        &::before {
             background: linear-gradient(to top, rgba(50,50,50,0.33) 20%, rgba(0,0,0,0));
+        }
+
+        &::after {
+            background-color: $pri;
+            opacity: 1;
+            transition: opacity 0.33s 0.15s;
+
+            .is-in-viewport & {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@include media-query('desktop-sml') {
+    .hero {
+        &__media {
+            padding-bottom: 33.33%;
+        }
+
+        &__content {
+            bottom: 40px;
+            left: 40px;
+        }
+
+        &__title {
+            font-size: 60px;
         }
     }
 }

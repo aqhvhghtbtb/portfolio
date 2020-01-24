@@ -1,5 +1,4 @@
 import React from "react";
-import {BrowserRouter as Router, Link, Route, Switch, NavLink} from "react-router-dom";
 
 function Header(props) {
     console.log('header')
@@ -7,10 +6,14 @@ function Header(props) {
         <div className="header">
             <div className="header__content">
                 <h2 className="header__byline">
-                    Doortje Spanjerberg
+                    <span className="header__text">
+                        Doortje Spanjerberg
+                    </span>
                 </h2>
                 <h3 className="header__title">
-                    Frontend Developer
+                    <span className="header__text">
+                        Frontend Developer
+                    </span>
                 </h3>
             </div>
         </div>

@@ -7,18 +7,40 @@
     &__content {
         line-height: 32px;
         border-bottom: 4px solid $sec;
-        padding: 20px 0 8px;
+        padding: 20px 0 0;
         width: 100%;
     }
 
     &__byline {
         font-size: 24px;
-        font-weight: bold;
+        line-height: 24px;
+        overflow: hidden;
+        padding-bottom: 2px;
+
+        & .header__text {
+            opacity: 0;
+            transform: translateY(100%);
+            animation: animTextFromTopToBottom 0.33s 0.2s forwards $bezier-ease;
+        }
     }
 
     &__title {
         font-size: 32px;
-        font-weight: bold;
+        line-height: 32px;
+        @include font-sec-black;
+        overflow: hidden;
+        padding-bottom: 10px;
+
+        & .header__text {
+            opacity: 0;
+            transform: translateY(-100%);
+            animation: animTextFromBottomToTop 0.33s 0.4s forwards $bezier-ease;
+        }
+    }
+
+    &__text {
+        position: relative;
+        display: block;
     }
 }
 
@@ -26,17 +48,14 @@
     .header {
         padding: 0;
 
-        &__content {
-            line-height: 36px;
-            padding: 20px 0 16px;
-        }
-
         &__byline {
             font-size: 30px;
+            line-height: 30px;
         }
 
         &__title {
             font-size: 48px;
+            line-height: 48px;
         }
     }
 }

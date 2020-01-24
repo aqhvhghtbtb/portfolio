@@ -1,4 +1,9 @@
 .media {
     max-width: 780px;
     margin: 0 auto;
+    position: relative;
+
+    &__img {
+        object-fit: cover;
+    }
 }

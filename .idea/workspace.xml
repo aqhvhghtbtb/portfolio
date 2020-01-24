@@ -2,25 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a789f5-7c33-4f4d-b13a-433ee0eb4707" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/resources/js/partials/animations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/js/partials/lazyLoad.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/js/vendor/lazyload.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/sass/settings/_animations.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/sass/settings/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Media/Media.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Media/Media.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Paragraph/Paragraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paragraph/Paragraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Project/ProjectDetail/ProjectDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project/ProjectDetail/ProjectDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Project/ProjectList/ProjectList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project/ProjectList/ProjectList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Project/ProjectListItem/ProjectListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project/ProjectListItem/ProjectListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_cms-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_cms-content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_hero.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_list.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_media.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,8 @@
       <workItem from="1579535748215" duration="11508000" />
       <workItem from="1579625770547" duration="10041000" />
       <workItem from="1579678003766" duration="177000" />
-      <workItem from="1579717420181" duration="8157000" />
+      <workItem from="1579717420181" duration="8375000" />
+      <workItem from="1579886172891" duration="7905000" />
     </task>
     <servers />
   </component>
@@ -126,9 +127,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="629" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1578601123010" />
-    <state x="506" y="287" width="667" height="476" key="find.popup" timestamp="1579720421081">
+    <state x="506" y="287" width="667" height="476" key="find.popup" timestamp="1579903135456">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="506" y="287" width="667" height="476" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1579720421081" />
+    <state x="506" y="287" width="667" height="476" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1579903135456" />
   </component>
 </project>

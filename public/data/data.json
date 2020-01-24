@@ -18,6 +18,7 @@
                         "component" : "hero",
                         "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
                         "data" : {
+                            "test" : "https://via.placeholder.com/16x9",
                             "desktopImg" : "https://via.placeholder.com/1080x420",
                             "mobileImg" : "https://via.placeholder.com/480x240",
                             "title" : "Action"
