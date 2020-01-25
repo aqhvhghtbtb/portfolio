@@ -6,7 +6,7 @@
                 "component": "projectListItem",
                 "headline": "Action",
                 "description": "Europe’s major retail success story",
-                "thumbnail" : "https://via.placeholder.com/200",
+                "thumbnail" : "http://placekitten.com/200/200",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
@@ -19,8 +19,8 @@
                         "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
                         "data" : {
                             "test" : "https://via.placeholder.com/16x9",
-                            "desktopImg" : "https://via.placeholder.com/1080x420",
-                            "mobileImg" : "https://via.placeholder.com/480x240",
+                            "desktopImg" : "http://placekitten.com/1080/420",
+                            "mobileImg" : "http://placekitten.com/480/240",
                             "title" : "Action"
                         }
                     },
@@ -86,7 +86,7 @@
                 "component": "projectListItem",
                 "headline": "Defensie",
                 "description": "Europe’s major retail success story",
-                "thumbnail" : "https://via.placeholder.com/150",
+                "thumbnail" : "http://placekitten.com/200/200",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
@@ -108,7 +108,7 @@
                 "component": "projectListItem",
                 "headline": "Accenture",
                 "description": "Europe’s major retail success story",
-                "thumbnail" : "https://via.placeholder.com/120",
+                "thumbnail" : "http://placekitten.com/200/200",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
@@ -130,7 +130,7 @@
                 "component": "projectListItem",
                 "headline": "DNB",
                 "description": "Europe’s major retail success story",
-                "thumbnail" : "https://via.placeholder.com/110",
+                "thumbnail" : "http://placekitten.com/200/200",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
