@@ -62,7 +62,13 @@ class App extends React.Component {
         const { data, isLoading, error } = this.state;
 
         if (isLoading || !data) {
-            return <p>Loading ...</p>;
+            return (
+                <div className="page-loader">
+                        <span className="page-loader__text">
+                            Loading
+                        </span>
+                </div>
+            )
         }
 
         if(error) {

@@ -93,6 +93,30 @@
                 ]
             },
             {
+                "_uid": "95979090d66d7f32e45a5be74f12f4f58a79be68",
+                "component": "projectListItem",
+                "headline": "Private Stash Indexer",
+                "description": "A personal Path of Exile tool",
+                "thumbnail" : "/images/poe/poe_thumbnail.jpg",
+                "metaList" : [
+                    "NodeJS",
+                    "RESTful API",
+                    "JS(ES6)"
+                ],
+                "components" : [
+                    {
+                        "component" : "hero",
+                        "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd89901",
+                        "data" : {
+                            "desktopImg" : "/images/poe/poe_hero_desktop.jpg",
+                            "mobileImg" : "/images/poe/poe_hero_mobile.jpg",
+                            "title" : "Path of Exile Private Stash indexer",
+                            "link" : "http://privatepoestashindexer-env.hfzprhpwt9.eu-north-1.elasticbeanstalk.com/"
+                        }
+                    }
+                ]
+            },
+            {
                 "_uid": "95979093d66d7f32e55a5be74f12f4f58a79be99",
                 "component": "projectListItem",
                 "headline": "Defensie Officier",
