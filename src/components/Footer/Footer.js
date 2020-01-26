@@ -38,7 +38,7 @@ class Footer extends React.Component {
         console.log('render footer')
         const socialList = this.props.data.socialList.items.map((item, key) =>
               <li key={this.generateUniqueKey(item.url)} className="footer__social-item">
-                  <a href={item.url} className={"footer__social-link footer__social-link--" + item.class}>
+                  <a href={item.url} className={"footer__social-link footer__social-link--" + item.class} target="_blank">
                       <span className="screenreader">
                           {item.name}
                       </span>

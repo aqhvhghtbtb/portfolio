@@ -52,3 +52,12 @@ $breakpoints: (
 .screenreader {
     @include screenreader;
 }
+
+/*
+    font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+ */
+
+@mixin responsiveFont($fontSize) {
+    font-size: calc(#{$fontSize}px + ((#{$fontSize} * 2) - #{$fontSize}) * ((100vw - 300px) / (1440 - 300)));
+    line-height: calc(#{$fontSize}px + ((#{$fontSize} * 2) - #{$fontSize}) * ((100vw - 300px) / (1440 - 300)));
+}

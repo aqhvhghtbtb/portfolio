@@ -22,8 +22,7 @@
     }
 
     &__byline {
-        font-size: 24px;
-        line-height: 24px;
+        @include responsiveFont(24);
         overflow: hidden;
         padding-bottom: 2px;
 
@@ -35,8 +34,7 @@
     }
 
     &__title {
-        font-size: 32px;
-        line-height: 32px;
+        @include responsiveFont(32);
         @include font-sec-black;
         overflow: hidden;
         padding-bottom: 10px;
@@ -57,15 +55,5 @@
 @include media-query('desktop-sml') {
     .header {
         padding: 0;
-
-        &__byline {
-            font-size: 30px;
-            line-height: 30px;
-        }
-
-        &__title {
-            font-size: 48px;
-            line-height: 48px;
-        }
     }
 }

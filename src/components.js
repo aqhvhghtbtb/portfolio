@@ -3,12 +3,14 @@ import Hero from "./components/Hero/Hero";
 import Paragraph from "./components/Paragraph/Paragraph";
 import List from "./components/List/List";
 import Media from "./components/Media/Media";
+import MediaList from "./components/MediaList/MediaList";
 
 const Components = {
     hero: Hero,
     paragraph: Paragraph,
     list: List,
     media: Media,
+    medialist: MediaList,
 };
 
 export default block => {

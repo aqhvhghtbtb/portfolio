@@ -3,28 +3,95 @@
 
     &__content {
         position: absolute;
-        bottom: 20px;
-        left: 20px;
+        bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+
+        .has-anim & {
+            overflow: hidden;
+        }
     }
 
     &__title {
-        font-size: 30px;
+        @include responsiveFont(20);
         @include font-sec-black;
-        position: relative;
-        overflow: hidden;
+        color: $ter;
+        transition: opacity 0.2s, transform 0.33s $bezier-ease;
+        display: block;
+        flex: 1;
+        padding-right: 20px;
+
+        .has-anim & {
+            transform: translateY(100%);
+            opacity: 0;
+            transition-delay: 0.5s;
+        }
+
+        .is-in-viewport & {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
-    &__text {
-        transform: translateY(100%);
-        opacity: 0;
-        animation: animTextFromTopToBottom 0.5s 0.33s forwards $easeInOutCubic;
+    &__link {
         display: block;
+        position: relative;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 2px solid rgba(240,240,240,0.75);
+        background-color: transparent;
+        transition: background-color 0.2s, border-color 0.2s, opacity 0.2s, transform 0.33s $bezier-ease;
+
+        &:hover {
+            background-color: $pri;
+            border-color: $pri;
+            transform: scale(1.1) !important;
+        }
+
+        &:active {
+            transform: scale(0.975);
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.75);
+            transition: opacity 0.2s;
+        }
+
+        &::before {
+            @include icon-external_link_w;
+            opacity: 1;
+        }
+
+        &::after {
+            @include icon-external_link_pri;
+            opacity: 0;
+        }
+
+        .has-anim & {
+            transform: translateY(100%);
+            opacity: 0;
+            transition-delay: 0.55s;
+        }
+
+        .is-in-viewport & {
+            transform: none;
+            opacity: 1;
+        }
     }
 
     &__media {
         position: relative;
         background-size: cover;
-        background-position: center;
+        background-position: center top;
         padding-bottom: 56.25%;
         background-color: rgb(50,50,50);
 
@@ -39,7 +106,7 @@
         }
 
         &::before {
-            background: linear-gradient(to top, rgba(50,50,50,0.33) 20%, rgba(0,0,0,0));
+            background: linear-gradient(to top, rgba(30,30,30,0.33) 20%, rgba(0,0,0,0));
         }
 
         &::after {
@@ -54,19 +121,60 @@
     }
 }
 
+@include media-query('mobile-sml') {
+    .hero {
+        &__content {
+            padding: 0 15px;
+            bottom: 15px;
+        }
+
+        &__title {
+            @include responsiveFont(24);
+        }
+    }
+}
+
+@include media-query('tablet-sml') {
+    .hero {
+        &__title {
+            @include responsiveFont(30);
+            padding-right: 40px;
+        }
+
+        &__content {
+            padding: 0 30px;
+            bottom: 30px;
+        }
+
+        &__media {
+            padding-bottom: 50%;
+        }
+
+        &__link {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
 @include media-query('desktop-sml') {
     .hero {
         &__media {
-            padding-bottom: 33.33%;
+            padding-bottom: 40%;
         }
 
         &__content {
             bottom: 40px;
-            left: 40px;
+            padding: 0 40px;
         }
 
         &__title {
-            font-size: 60px;
+            padding-right: 60px;
+        }
+
+        &__link {
+            width: 60px;
+            height: 60px;
         }
     }
 }

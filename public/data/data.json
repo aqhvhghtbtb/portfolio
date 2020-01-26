@@ -6,7 +6,7 @@
                 "component": "projectListItem",
                 "headline": "Action",
                 "description": "Europe’s major retail success story",
-                "thumbnail" : "http://placekitten.com/200/200",
+                "thumbnail" : "/images/action/action_thumbnailx200.jpg",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
@@ -18,10 +18,10 @@
                         "component" : "hero",
                         "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
                         "data" : {
-                            "test" : "https://via.placeholder.com/16x9",
-                            "desktopImg" : "http://placekitten.com/1080/420",
-                            "mobileImg" : "http://placekitten.com/480/240",
-                            "title" : "Action"
+                            "desktopImg" : "/images/action/action_herox520.jpg",
+                            "mobileImg" : "/images/action/action_herox300.jpg",
+                            "title" : "Action",
+                            "link" : "https://nl.action.jobs"
                         }
                     },
                     {
@@ -42,6 +42,17 @@
                                 "Listitem 2",
                                 "Listitem 3",
                                 "Listitem 4"
+                            ]
+                        }
+                    },
+                    {
+                        "component" : "medialist",
+                        "_uid": "2f4dad86b6a38169a7cf005a9b31ae0f066fa20b",
+                        "data" : {
+                            "body" : [
+                                "/images/action/action_anim1.gif",
+                                "/images/action/action_anim2.gif",
+                                "/images/action/action_anim3.gif"
                             ]
                         }
                     },
@@ -82,11 +93,11 @@
                 ]
             },
             {
-                "_uid": "95979393d66d7f32e55a5be74f12f4f58a79be18",
+                "_uid": "95979093d66d7f32e55a5be74f12f4f58a79be99",
                 "component": "projectListItem",
-                "headline": "Defensie",
-                "description": "Europe’s major retail success story",
-                "thumbnail" : "http://placekitten.com/200/200",
+                "headline": "Defensie Officier",
+                "description": "The Dutch army Officer campaign",
+                "thumbnail" : "/images/defensie_officier/defensie_officier_thumbnail.jpg",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
@@ -97,18 +108,20 @@
                         "component" : "hero",
                         "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
                         "data" : {
-                            "img" : "plaatje",
-                            "title" : "Ik ben een hero"
+                            "desktopImg" : "/images/defensie_officier/defensie_officier_hero_desktop.jpg",
+                            "mobileImg" : "/images/defensie_officier/defensie_officier_hero_mobile.jpg",
+                            "title" : "Defensie Officier",
+                            "link" : "https://werkenbijdefensie.nl/officier"
                         }
                     }
                 ]
             },
             {
-                "_uid": "95978393d66d7f32e55a5be74f12f4f58a79be18",
+                "_uid": "95978393d66d7f32e55a5be74f12f4f58a79be55",
                 "component": "projectListItem",
                 "headline": "Accenture",
-                "description": "Europe’s major retail success story",
-                "thumbnail" : "http://placekitten.com/200/200",
+                "description": "A multinational expert in providing broad services",
+                "thumbnail" : "/images/accenture/accenture_thumbnail.jpg",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
@@ -117,20 +130,22 @@
                 "components" : [
                     {
                         "component" : "hero",
-                        "_uid": "da39a4ee5e6b4b0d3255bfef95601890afd80709",
+                        "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
                         "data" : {
-                            "img" : "plaatje",
-                            "title" : "Ik ben een hero"
+                            "desktopImg" : "/images/accenture/accenture_hero_desktop.jpg",
+                            "mobileImg" : "/images/accenture/accenture_hero_mobile.jpg",
+                            "title" : "Accenture",
+                            "link" : "https://werkenbijaccenture.nl"
                         }
                     }
                 ]
             },
             {
-                "_uid": "95979093d66d7f32e55a5be74f12f4f58a79be18",
+                "_uid": "95979093d66d7f32e55a5be74f12f4f58a79eb18",
                 "component": "projectListItem",
                 "headline": "DNB",
-                "description": "Europe’s major retail success story",
-                "thumbnail" : "http://placekitten.com/200/200",
+                "description": "The central bank of the Netherlands",
+                "thumbnail" : "/images/dnb/dnb_thumbnail.jpg",
                 "metaList" : [
                     "HTML5",
                     "CSS3/SASS",
@@ -139,17 +154,43 @@
                 "components" : [
                     {
                         "component" : "hero",
-                        "_uid": "da39a3ee5e6b4b0d3254bfef95601890afd80709",
+                        "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
                         "data" : {
-                            "img" : "plaatje",
-                            "title" : "Ik ben een hero"
+                            "desktopImg" : "/images/dnb/dnb_hero_desktop.jpg",
+                            "mobileImg" : "/images/dnb/dnb_hero_mobile.jpg",
+                            "title" : "De Nederlandse Bank",
+                            "link" : "https://werkenbijdnb.nl"
+                        }
+                    }
+                ]
+            },
+            {
+                "_uid": "95979093d66d7f32e55a5be74f12f4f58a79be88",
+                "component": "projectListItem",
+                "headline": "Defensie Gevechtsfuncties",
+                "description": "The Dutch army Combatants campaign",
+                "thumbnail" : "/images/defensie_gevechtsfuncties/defensie_gevechtsfuncties_thumbnail.jpg",
+                "metaList" : [
+                    "HTML5",
+                    "CSS3/SASS",
+                    "JS(ES5)"
+                ],
+                "components" : [
+                    {
+                        "component" : "hero",
+                        "_uid": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "data" : {
+                            "desktopImg" : "/images/defensie_gevechtsfuncties/defensie_gevechtsfuncties_hero_desktop.jpg",
+                            "mobileImg" : "/images/defensie_gevechtsfuncties/defensie_gevechtsfuncties_hero_mobile.jpg",
+                            "title" : "Defensie Gevechtsfuncties",
+                            "link" : "https://werkenbijdefensie.nl/gevechtsfuncties"
                         }
                     }
                 ]
             }
         ],
         "footer" : {
-            "_uid": "95979093d66d7f32e55a5be74f12f4f58a89be18",
+            "_uid": "95979093d66d7f32e55a5be74f12f4f58a89be77",
             "component": "footer",
             "headline": "Contact me",
             "socialList" : {
@@ -161,12 +202,12 @@
                         "class" : "email"
                     },
                     {
-                        "url" : "www.linkedin.com",
+                        "url" : "https://www.linkedin.com/in/doortje-spanjerberg-73711a64/",
                         "name" : "LinkedIn",
                         "class" : "linkedin"
                     },
                     {
-                        "url" : "www.github.com/Dodomew",
+                        "url" : "https://github.com/Dodomew",
                         "name" : "GitHub",
                         "class" : "github"
                     },
@@ -184,14 +225,16 @@
                     "CSS3 & Sass",
                     "ES5/ES6",
                     "jQuery",
-                    "UX"
+                    "UX",
+                    "Git"
                 ]
             },
             "skills_sec" : {
                 "title" : "Secondary skills",
                 "items" : [
                     "React JS",
-                    "Node JS"
+                    "Node JS",
+                    "RESTful API"
                 ]
             }
         }

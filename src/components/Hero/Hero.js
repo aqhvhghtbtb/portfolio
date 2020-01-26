@@ -16,10 +16,13 @@ const Hero = (props) => {
             </div>
             <div className="hero__content">
                 <h3 className="hero__title">
-                    <span className="hero__text">
-                        {props.block.data.title}
-                    </span>
+                    {props.block.data.title}
                 </h3>
+                <a href={props.block.data.link} target="_blank" className="hero__link">
+                    <span className="screenreader">
+                        Visit site
+                    </span>
+                </a>
             </div>
         </div>
     );
