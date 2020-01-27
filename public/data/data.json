@@ -29,7 +29,7 @@
                         "_uid": "2f4dad86b8e48169a7cf005a9b31ae0f066fa20b",
                         "data" : {
                             "title" : "An international recruitment site",
-                            "body" : "Action approached us with the question if we could make their recruitment site. This site had to go live at the same time in 7 different countries, each with their own languages. For Action, we designed and developed this big and broad website where people can apply for jobs, read about Action, and subscribe to a job alert."
+                            "body" : "Action approached us with the question if we could make their recruitment site. This site had to go live at the same time in 7 different countries, each with their own languages. For Action, we designed and developed this all-encompassing website where people can apply for jobs, read about Action, and subscribe to a job alert."
                         }
                     },
                     {
@@ -42,7 +42,8 @@
                                 "Mobile first development",
                                 "Develop all frontend JavaScript",
                                 "Develop all animations",
-                                "Test the frontend and backend in different browsers and different devices and write fallbacks where needed",
+                                "Test the frontend and backend in different browsers and different devices",
+                                "Write fallbacks and transpile code for different browsers where needed",
                                 "Improve UX after testing and feedback"
                             ]
                         }
@@ -52,7 +53,7 @@
                         "_uid": "2f4dad86b8e11169a7cf005a9b31ae0f055fa20b",
                         "data" : {
                             "title" : "Calculators",
-                            "body" : "Action asked us to create a salary calculator and a distance calculator. A salary calculator for the stores to see how much money you would make, depending on your age and working hours in a week."
+                            "body" : "Action asked us to create a salary and a distance calculator. A salary calculator for the stores to see what your salary would be, depending on your age and amount of hours worked in a week. A distance calculator to calculate your absolute distance from your postal code to the store where you can apply."
                         }
                     },
                     {
@@ -60,7 +61,7 @@
                         "_uid": "2f4dad86b8e11559a7cf005a9b31ae0f055fa20b",
                         "data" : {
                             "title" : "",
-                            "body" : "The distance calculator uses your postal code and asks the Google Maps API for a distance in KM to the corresponding store. The distance calculator also saves your postal code in LocalStorage, to avoid requesting the API too much. I also had to create validation to see if the postal code you filled in matches the correct format, since this varies per country."
+                            "body" : "The distance calculator uses your postal code and asks the Google Maps API for a distance in kilometers to the corresponding store. The distance calculator also saves your postal code in LocalStorage, to avoid requesting the API too much. I also had to create RegEx validation to see if the postal code you filled in matches the correct format, since this varies per country."
                         }
                     },
                     {
@@ -137,7 +138,7 @@
                         "_uid": "2f4dad77e8e48169a7cf005a9b31ae0f055fa20b",
                         "data" : {
                             "title" : "One click",
-                            "body" : "Path of Exile is an online ARPG created by Grinding Gear Games that I play a lot. In this game you have lots of different currency and it has become increasingly more frustrating to know what items are worth something. Because of this, I created my own tool that checks my stash (or bank if you will) with a click of a button and gives me an organised overview of my items and their current worth."
+                            "body" : "Path of Exile is an online ARPG created by Grinding Gear Games that I really enjoy. In this game you have lots of different currency and it has become increasingly more frustrating to know which items are worth something. Because of this, I created my own tool in NodeJS that checks my stash (or bank if you will) with a click of a button and gives me an organised overview of my items and their current worth."
                         }
                     },
                     {
@@ -154,7 +155,7 @@
                         "_uid": "2f4dad77e8e48169a7cf005a9b31ae0f055fa20b",
                         "data" : {
                             "title" : "Filter, organize and categorize",
-                            "body" : "To start, you'll need to send a request to GGG's server with a specific URL and some variables, namely your account name and your POESESSIONID. The last one is basically a temporary password which is set as a cookie in your browser when you log in to the Path of Exile official website. If these 2 variables are correct, the server will send you back 1 giant JSON object with all the items in this account's stash. I set up a NodeJS server to handle the requests and responses."
+                            "body" : "To start, you'll need to make an RESTful API call to GGG's server with some variables, namely your account name and your POESESSIONID. The last one is basically a temporary password which is set as a cookie in your browser when you log in to the Path of Exile official website. If these 2 variables are correct, the server will send you back 1 giant JSON object with all the items in this account's stash."
                         }
                     },
                     {
@@ -162,7 +163,7 @@
                         "_uid": "2f4dad77e8e48169a7cf116a9b31ae0f055fa20b",
                         "data" : {
                             "title" : "",
-                            "body" : "The 2nd step was to send out an API request to a different website, https://poe.ninja, to tell me how much currency a certain item is worth. For this, I had to sort all my items and then for each item in a category, send a request to the PoeNinja API which would return an object with some info, including the current price. I then assigned this price to my own items and now I could render it in the frontend. I also created a sort by currency function and a sort alphabetically function."
+                            "body" : "The 2nd step was to send out an API request to a different website, <a href=\"#\">PoeNinja</a>, to tell me how much currency a certain item is worth. For this, I had to sort all my items and then for each item in a category, send a request to the PoeNinja API which would return an object with some info, including the current price. I then assigned this price to my own items and now I could render it in the frontend. I also created a sort by currency function and a sort alphabetically function."
                         }
                     },
                     {
@@ -179,7 +180,7 @@
                         "_uid": "2f4dad77e8e48759a7cf106a9b31ae0f055fa30b",
                         "data" : {
                             "title" : "The river",
-                            "body" : "The last thing I wanted was to be able to see what certain items were worth that are variable. Some items can roll with a range of modifiers on them, which can make them quite unique. For this I had to follow the API river;a continuous data stream that gets updated almost every second. This river is basically 1 giant JSON object which holds all items that were added or updated during the previous river update. I wrote a pattern matching function to check my items with mods and look if there is a similar item in the river, and then check what its price is."
+                            "body" : "The last thing I wanted was to be able to see what certain items were worth that are dynamic. Some items can roll with a range of modifiers on them, which can make them quite unique. For this I had to follow the river; a continuous data stream that gets updated almost every second. This river is basically 1 giant JSON object which holds all items that were added or updated during the previous river update. I wrote a pattern matching function to check my item and look if there is a similar item in the river, and then estimate what it is worth. The results were updated in the frontend with an AJAX call."
                         }
                     }
                 ]
