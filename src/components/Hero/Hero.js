@@ -18,7 +18,7 @@ const Hero = (props) => {
                 <h3 className="hero__title">
                     {props.block.data.title}
                 </h3>
-                <a href={props.block.data.link} target="_blank" className="hero__link">
+                <a href={props.block.data.link} target="_blank" rel="noopener noreferrer" className="hero__link">
                     <span className="screenreader">
                         Visit site
                     </span>

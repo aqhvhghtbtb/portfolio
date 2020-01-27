@@ -900,5 +900,7 @@ body {
 @media (min-width: 1024px) {
   .component {
     margin: 0 auto 60px; }
+    .component.cms-content + .component.cms-content {
+      margin: 0 auto 40px; }
     .component:first-child {
       margin-top: 60px; } }

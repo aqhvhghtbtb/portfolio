@@ -56,6 +56,10 @@
     .component {
         margin: 0 auto 60px;
 
+        &.cms-content + &.cms-content {
+            margin: 0 auto 40px;
+        }
+
         &:first-child {
             margin-top: 60px;
         }

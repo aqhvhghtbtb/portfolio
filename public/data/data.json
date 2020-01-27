@@ -20,7 +20,7 @@
                         "data" : {
                             "desktopImg" : "/images/action/action_herox520.jpg",
                             "mobileImg" : "/images/action/action_herox300.jpg",
-                            "title" : "Action",
+                            "title" : "Recruitment site Action",
                             "link" : "https://nl.action.jobs"
                         }
                     },
@@ -28,21 +28,73 @@
                         "component" : "paragraph",
                         "_uid": "2f4dad86b8e48169a7cf005a9b31ae0f066fa20b",
                         "data" : {
-                            "title" : "Action de site",
-                            "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor urna nec magna aliquet pellentesque. Sed convallis, justo quis pretium semper, massa tortor consequat magna, dignissim dapibus ante diam a felis. Nam magna erat, euismod quis neque nec, dictum maximus ex. Vestibulum sodales eget sapien eu sollicitudin. "
+                            "title" : "An international recruitment site",
+                            "body" : "Action approached us with the question if we could make their recruitment site. This site had to go live at the same time in 7 different countries, each with their own languages. For Action, we designed and developed this big and broad website where people can apply for jobs, read about Action, and subscribe to a job alert."
                         }
                     },
                     {
                         "component" : "list",
                         "_uid": "2f4dad86b8e38169a7cf005a9b31ae0f066fa20b",
                         "data" : {
-                            "title" : "Ik ben een list",
+                            "title" : "My responsibilities for Action were:",
                             "body" : [
-                                "Listitem 1",
-                                "Listitem 2",
-                                "Listitem 3",
-                                "Listitem 4"
+                                "Set up correct SASS, HTML/Blade structure",
+                                "Mobile first development",
+                                "Develop all frontend JavaScript",
+                                "Develop all animations",
+                                "Test the frontend and backend in different browsers and different devices and write fallbacks where needed",
+                                "Improve UX after testing and feedback"
                             ]
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad86b8e11169a7cf005a9b31ae0f055fa20b",
+                        "data" : {
+                            "title" : "Calculators",
+                            "body" : "Action asked us to create a salary calculator and a distance calculator. A salary calculator for the stores to see how much money you would make, depending on your age and working hours in a week."
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad86b8e11559a7cf005a9b31ae0f055fa20b",
+                        "data" : {
+                            "title" : "",
+                            "body" : "The distance calculator uses your postal code and asks the Google Maps API for a distance in KM to the corresponding store. The distance calculator also saves your postal code in LocalStorage, to avoid requesting the API too much. I also had to create validation to see if the postal code you filled in matches the correct format, since this varies per country."
+                        }
+                    },
+                    {
+                        "component" : "medialist",
+                        "_uid": "2f4dad67b6a38169a7cf005a9b31ae0f066fa20b",
+                        "data" : {
+                            "body" : [
+                                "/images/action/action_anim5.gif"
+                            ]
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad99a8e11559a7cf005a9b31ae0f055fa20b",
+                        "data" : {
+                            "title" : "",
+                            "body" : "The salary calculator takes your age and looks up what the corresponding hourly wage is. From there, it gets multiplied by 4.33, the rough estimate of weeks in 1 month."
+                        }
+                    },
+                    {
+                        "component" : "medialist",
+                        "_uid": "2f4dad77b6a38169a7cf005a9b31ae0f066fa20b",
+                        "data" : {
+                            "body" : [
+                                "/images/action/action_anim4.gif"
+                            ]
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad86b8e48169a7cf005a9b31ae0f055fa20b",
+                        "data" : {
+                            "title" : "Bouncy",
+                            "body" : "For Action I decided on a subtle bounce animation for the most common interactions, such as hover states. This makes the site more playful to interact with. You can view some animations below."
                         }
                     },
                     {
@@ -55,41 +107,7 @@
                                 "/images/action/action_anim3.gif"
                             ]
                         }
-                    },
-                    {
-                        "component" : "media",
-                        "_uid": "2f4dad86b8e48169a7cf005a9b30ae0f066fa20b",
-                        "data" : {
-                            "title" : "Ik ben een media",
-                            "mobileImg" : "https://via.placeholder.com/480x240",
-                            "desktopImg" : "https://via.placeholder.com/1080x420"
-                        }
-                    },
-                    {
-                        "component" : "paragraph",
-                        "_uid": "2f4dad86b8e48169a7cf805a9b31ae0f066fa20b",
-                        "data" : {
-                            "title" : "Ik ben een paragraph",
-                            "body" : "Lorem ipsum dolor sit amet"
-                        }
-                    },
-                    {
-                        "component" : "paragraph",
-                        "_uid": "2f4dad86b8e48169a7cf004a9b31ae0f066fa20b",
-                        "data" : {
-                            "title" : "Ik ben een paragraph",
-                            "body" : "Lorem ipsum dolor sit amet"
-                        }
-                    },
-                    {
-                        "component" : "paragraph",
-                        "_uid": "2f4dad86b8e48169a7cf002a9b31ae0f066fa20b",
-                        "data" : {
-                            "title" : "Ik ben een paragraph",
-                            "body" : "Lorem ipsum dolor sit amet"
-                        }
                     }
-
                 ]
             },
             {
@@ -112,6 +130,56 @@
                             "mobileImg" : "/images/poe/poe_hero_mobile.jpg",
                             "title" : "Path of Exile Private Stash indexer",
                             "link" : "http://privatepoestashindexer-env.hfzprhpwt9.eu-north-1.elasticbeanstalk.com/"
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8e48169a7cf005a9b31ae0f055fa20b",
+                        "data" : {
+                            "title" : "One click",
+                            "body" : "Path of Exile is an online ARPG created by Grinding Gear Games that I play a lot. In this game you have lots of different currency and it has become increasingly more frustrating to know what items are worth something. Because of this, I created my own tool that checks my stash (or bank if you will) with a click of a button and gives me an organised overview of my items and their current worth."
+                        }
+                    },
+                    {
+                        "component" : "medialist",
+                        "_uid": "2f4dad12b6a38169a7cf005a9b31ae0f066fa20b",
+                        "data" : {
+                            "body" : [
+                                "/images/poe/poe_anim1.gif"
+                            ]
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8e48169a7cf005a9b31ae0f055fa20b",
+                        "data" : {
+                            "title" : "Filter, organize and categorize",
+                            "body" : "To start, you'll need to send a request to GGG's server with a specific URL and some variables, namely your account name and your POESESSIONID. The last one is basically a temporary password which is set as a cookie in your browser when you log in to the Path of Exile official website. If these 2 variables are correct, the server will send you back 1 giant JSON object with all the items in this account's stash. I set up a NodeJS server to handle the requests and responses."
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8e48169a7cf116a9b31ae0f055fa20b",
+                        "data" : {
+                            "title" : "",
+                            "body" : "The 2nd step was to send out an API request to a different website, https://poe.ninja, to tell me how much currency a certain item is worth. For this, I had to sort all my items and then for each item in a category, send a request to the PoeNinja API which would return an object with some info, including the current price. I then assigned this price to my own items and now I could render it in the frontend. I also created a sort by currency function and a sort alphabetically function."
+                        }
+                    },
+                    {
+                        "component" : "medialist",
+                        "_uid": "2f4dad12b6a38169a7cf005a9b31ae0f816fa20b",
+                        "data" : {
+                            "body" : [
+                                "/images/poe/poe_anim2.gif"
+                            ]
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8e48759a7cf106a9b31ae0f055fa30b",
+                        "data" : {
+                            "title" : "The river",
+                            "body" : "The last thing I wanted was to be able to see what certain items were worth that are variable. Some items can roll with a range of modifiers on them, which can make them quite unique. For this I had to follow the API river;a continuous data stream that gets updated almost every second. This river is basically 1 giant JSON object which holds all items that were added or updated during the previous river update. I wrote a pattern matching function to check my items with mods and look if there is a similar item in the river, and then check what its price is."
                         }
                     }
                 ]
@@ -137,6 +205,14 @@
                             "title" : "Defensie Officier",
                             "link" : "https://werkenbijdefensie.nl/officier"
                         }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8e48759a7cf106a9b31ae1f155fa30b",
+                        "data" : {
+                            "title" : "More officers",
+                            "body" : "The Dutch army wanted to get more people interested in becoming an officer of the army. For this they launched a campaign in which they recorded 3 different officers in a Spotify podcast, telling their experiences and explaining what their job entails. For this, I had to create an XML feed for each podcast to deliver to Spotify."
+                        }
                     }
                 ]
             },
@@ -158,8 +234,58 @@
                         "data" : {
                             "desktopImg" : "/images/accenture/accenture_hero_desktop.jpg",
                             "mobileImg" : "/images/accenture/accenture_hero_mobile.jpg",
-                            "title" : "Accenture",
+                            "title" : "Recruitment site Accenture",
                             "link" : "https://werkenbijaccenture.nl"
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8e48711a7cf106a9b31ae1f155fa90b",
+                        "data" : {
+                            "title" : "From IT to Accountancy",
+                            "body" : "Accenture wanted a new and refresing recruitment site as their own had been performing less than what Accenture wanted. For this, they asked us to create their recruitment site to improve their applicant conversion."
+                        }
+                    },
+                    {
+                        "component" : "list",
+                        "_uid": "2f4dad86b8e38769b7cf995a9b31ae0f066fa20b",
+                        "data" : {
+                            "title" : "My responsibilities for Accenture were:",
+                            "body" : [
+                                "Set up correct SASS, HTML/Blade structure",
+                                "Mobile first development",
+                                "Develop all frontend JavaScript",
+                                "Create all animations",
+                                "Test the frontend and backend in different browsers and different devices and write fallbacks where needed",
+                                "Improve UX after testing and feedback from client",
+                                "Implement tracking"
+                            ]
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8e48711a7cf106a9b31ae1f155fa90b",
+                        "data" : {
+                            "title" : "Pretty purple",
+                            "body" : "The site is actually a lot bigger than it first looks, which was quite the challenge during development. A lot of things are intertwined and both frontend and backend had to make sure everything fit, was logical and connected."
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8e98765a7cf106a9b31ae1f155fa90b",
+                        "data" : {
+                            "title" : "",
+                            "body" : "I am particulary happy with the animations, as they took a lot of time but they pay off in the end."
+                        }
+                    },
+                    {
+                        "component" : "medialist",
+                        "_uid": "2f4dad12b6a11169a7cf005a9b31ae0f816fa20b",
+                        "data" : {
+                            "body" : [
+                                "/images/accenture/accenture_anim1.gif",
+                                "/images/accenture/accenture_anim2.gif"
+                            ]
                         }
                     }
                 ]
@@ -182,8 +308,57 @@
                         "data" : {
                             "desktopImg" : "/images/dnb/dnb_hero_desktop.jpg",
                             "mobileImg" : "/images/dnb/dnb_hero_mobile.jpg",
-                            "title" : "De Nederlandse Bank",
+                            "title" : "Recruitment site DNB",
                             "link" : "https://werkenbijdnb.nl"
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8e98765a7cf190a9b31bb1f155fa90b",
+                        "data" : {
+                            "title" : "The central bank of the Netherlands",
+                            "body" : "De Nederlandse Bank or DNB is an independent public body and exercises supervision of financial institutions. To attract more applicants, DNB asked us to create a recruitment website."
+                        }
+                    },
+                    {
+                        "component" : "list",
+                        "_uid": "2f4dad86b8e76543b7cf995a9b31ae0f066fa20b",
+                        "data" : {
+                            "title" : "My responsibilities for DNB were:",
+                            "body" : [
+                                "Set up correct SASS, HTML/Blade structure",
+                                "Mobile first development",
+                                "Develop all frontend JavaScript",
+                                "Create all animations",
+                                "Test the frontend and backend in different browsers and different devices and write fallbacks where needed",
+                                "Improve UX after testing and feedback from client",
+                                "Implement tracking"
+                            ]
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8e98765a7cf190a9b31bb1e445aa90b",
+                        "data" : {
+                            "title" : "Confident",
+                            "body" : "An important and responsible client of this scale required a robust and mature design. They knew what they wanted: a straightforward design where applicants can learn about how DNB works and what it asks the user to have to apply. The animations were therefor also more sober than I would like to. However, the client was more than satisfied with the result."
+                        }
+                    },
+                    {
+                        "component" : "medialist",
+                        "_uid": "2f4dad12b6a11169a7bf005a9b31ae0a116fa99b",
+                        "data" : {
+                            "body" : [
+                                "/images/dnb/dnb_anim1.gif"
+                            ]
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad88f8f98765a7cf190a9b31bb1e445aa90b",
+                        "data" : {
+                            "title" : "",
+                            "body" : "One small detail was that the site had to work perfectly as well in Internet Explorer 11. While we do not support this browser anymore, DNB asked us specifically for IE11 support, seeing as it still one of their most used browsers."
                         }
                     }
                 ]
@@ -206,8 +381,74 @@
                         "data" : {
                             "desktopImg" : "/images/defensie_gevechtsfuncties/defensie_gevechtsfuncties_hero_desktop.jpg",
                             "mobileImg" : "/images/defensie_gevechtsfuncties/defensie_gevechtsfuncties_hero_mobile.jpg",
-                            "title" : "Defensie Gevechtsfuncties",
+                            "title" : "Defensie Gevechtsfuncties Campaign",
                             "link" : "https://werkenbijdefensie.nl/gevechtsfuncties"
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad88f8f98765a7cf190a9b31bb1e445aa99f",
+                        "data" : {
+                            "title" : "Close-up",
+                            "body" : "The Dutch army wanted to recruit new people for combatant roles. Seeing as this is quite a daunting job, a campaign was launched to offer more information and insight on what it's like to work as one."
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad88f8f98765a7cf190a9b31bb1e445bb80b",
+                        "data" : {
+                            "title" : "",
+                            "body" : "This campaign page is made as a fullscreen one-pager. The page is split into sections which are fullscreen on mobile and desktop. Each section is a different aspect of what to expect as a combatant."
+                        }
+                    },
+                    {
+                        "component" : "list",
+                        "_uid": "2f4dad86b8e76543c1af995a9b31ae0f996fa20b",
+                        "data" : {
+                            "title" : "My responsibilities for Defensie Gevechtsfuncties were:",
+                            "body" : [
+                                "Set up correct SASS, HTML/Blade structure",
+                                "Mobile first development",
+                                "Develop all frontend JavaScript",
+                                "Create all animations",
+                                "Test the frontend and backend in different browsers and different devices and write fallbacks where needed",
+                                "Improve UX after testing and feedback from client",
+                                "Implement tracking"
+                            ]
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad99a8c98745a7cf190a9b31bb1e445aa90b",
+                        "data" : {
+                            "title" : "Inkblots",
+                            "body" : "Because we wanted a bit more of a raw feeling, we thought it would be neat to use an inkblot as reveal animation for the first section. It offers a pretty cool and unique effect."
+                        }
+                    },
+                    {
+                        "component" : "medialist",
+                        "_uid": "2f4dad12b6a11169a7bf005f1e01ae0a116fa88f",
+                        "data" : {
+                            "body" : [
+                                "/images/defensie_gevechtsfuncties/defensie_gevechtsfuncties_anim1.gif"
+                            ]
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad99a8c98745a7aa880a9b31bb1e445aa90b",
+                        "data" : {
+                            "title" : "Portrait mode",
+                            "body" : "The Dutch army also had a campaign running on social media such as Instagram, in which they posted short videos in portrait mode. They asked us if we can build a video player which would support these types of videos. I made a custom video modal player with video controls and acting as a slider."
+                        }
+                    },
+                    {
+                        "component" : "medialist",
+                        "_uid": "2f4dad12b6a11169a7bf998f1e01ff0a116fa88f",
+                        "data" : {
+                            "body" : [
+                                "/images/defensie_gevechtsfuncties/defensie_gevechtsfuncties_anim2.gif"
+                            ]
                         }
                     }
                 ]
