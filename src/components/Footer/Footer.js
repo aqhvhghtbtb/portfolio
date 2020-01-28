@@ -37,8 +37,8 @@ class Footer extends React.Component {
     render() {
         console.log('render footer')
         const socialList = this.props.data.socialList.items.map((item, key) =>
-              <li key={this.generateUniqueKey(item.url)} className="footer__social-item">
-                  <a href={item.url} className={"footer__social-link footer__social-link--" + item.class} target="_blank" rel="noopener noreferrer">
+              <li key={this.generateUniqueKey(item.url)} className="footer__contact-item">
+                  <a href={item.url} className={"footer__contact-link footer__contact-link--" + item.class} target="_blank" rel="noopener noreferrer">
                       <span className="screenreader">
                           {item.name}
                       </span>
@@ -60,11 +60,12 @@ class Footer extends React.Component {
 
         return (
             <div className={"footer js-footer " + (this.state.isActive ? "is-active" :"")}>
+            <div className="footer__wrapper">
                 <button className="footer__btn js-contact-toggle" onClick={this.handleClick}>
                     {this.props.data.headline}
                 </button>
                 <div className="footer__content">
-                    <ul className="footer__social">
+                    <ul className="footer__contact">
                         {socialList}
                     </ul>
                 </div>
@@ -84,6 +85,7 @@ class Footer extends React.Component {
                         {skillsSecList}
                     </ul>
                 </div>
+            </div>
             </div>
         );
     }

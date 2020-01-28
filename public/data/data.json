@@ -29,12 +29,12 @@
                         "_uid": "2f4dad86b8e48169a7cf005a9b31ae0f066fa20b",
                         "data" : {
                             "title" : "An international recruitment site",
-                            "body" : "Action approached us with the question if we could make their recruitment site. This site had to go live at the same time in 7 different countries, each with their own languages. For Action, we designed and developed this all-encompassing website where people can apply for jobs, read about Action, and subscribe to a job alert."
+                            "body" : "Action approached Maximum with the question if we could make their recruitment site. This site had to go live at the same time in <strong>7 different countries</strong>, each with their own languages. For Action, we designed and developed this all-encompassing website where people can apply for jobs, read about Action, and subscribe to a job alert."
                         }
                     },
                     {
                         "component" : "list",
-                        "_uid": "2f4dad86b8e38169a7cf005a9b31ae0f066fa20b",
+                        "_uid": "2f4dad86b8e38169a7cf005a9b31ae0f066fa29b",
                         "data" : {
                             "title" : "My responsibilities for Action were:",
                             "body" : [
@@ -53,15 +53,15 @@
                         "_uid": "2f4dad86b8e11169a7cf005a9b31ae0f055fa20b",
                         "data" : {
                             "title" : "Calculators",
-                            "body" : "Action asked us to create a salary and a distance calculator. A salary calculator for the stores to see what your salary would be, depending on your age and amount of hours worked in a week. A distance calculator to calculate your absolute distance from your postal code to the store where you can apply."
+                            "body" : "Action asked Maximum to create a salary and a distance calculator. A salary calculator for the stores to see what your salary would be, depending on your age and amount of hours worked in a week. A distance calculator to calculate your absolute distance from your postal code to the store where you can apply."
                         }
                     },
                     {
                         "component" : "paragraph",
-                        "_uid": "2f4dad86b8e11559a7cf005a9b31ae0f055fa20b",
+                        "_uid": "2f4dad86b8e11559a7cf005a9b31ae0f055fa90b",
                         "data" : {
                             "title" : "",
-                            "body" : "The distance calculator uses your postal code and asks the Google Maps API for a distance in kilometers to the corresponding store. The distance calculator also saves your postal code in LocalStorage, to avoid requesting the API too much. I also had to create RegEx validation to see if the postal code you filled in matches the correct format, since this varies per country."
+                            "body" : "The distance calculator uses your postal code and asks the Google Maps API for a distance in kilometers to the corresponding store. The distance calculator also saves your postal code in LocalStorage, to avoid requesting the API too much. I also had to create <strong>RegEx validation</strong> to see if the postal code you filled in matches the correct format, since this varies per country."
                         }
                     },
                     {
@@ -95,7 +95,7 @@
                         "_uid": "2f4dad86b8e48169a7cf005a9b31ae0f055fa20b",
                         "data" : {
                             "title" : "Bouncy",
-                            "body" : "For Action I decided on a subtle bounce animation for the most common interactions, such as hover states. This makes the site more playful to interact with. You can view some animations below."
+                            "body" : "For Action I decided on a <strong>subtle bounce animation</strong> for the most common interactions, such as hover states. This makes the site more playful to interact with. You can view some animations below."
                         }
                     },
                     {
@@ -138,7 +138,7 @@
                         "_uid": "2f4dad77e8e48169a7cf005a9b31ae0f055fa20b",
                         "data" : {
                             "title" : "One click",
-                            "body" : "Path of Exile is an online ARPG created by Grinding Gear Games that I really enjoy. In this game you have lots of different currency and it has become increasingly more frustrating to know which items are worth something. Because of this, I created my own tool in NodeJS that checks my stash (or bank if you will) with a click of a button and gives me an organised overview of my items and their current worth."
+                            "body" : "Path of Exile is an online ARPG created by Grinding Gear Games that I really enjoy. In this game you have lots of different currency and it has become increasingly more frustrating to know which items are worth something. Because of this, I created my own tool in <strong>NodeJS</strong> that checks my stash (or bank if you will) with a click of a button and gives me an organised overview of my items and their current worth."
                         }
                     },
                     {
@@ -152,10 +152,18 @@
                     },
                     {
                         "component" : "paragraph",
-                        "_uid": "2f4dad77e8e48169a7cf005a9b31ae0f055fa20b",
+                        "_uid": "2f4dad77e8e48f99a7cf005a9b31ae0faa5fa20b",
                         "data" : {
                             "title" : "Filter, organize and categorize",
-                            "body" : "To start, you'll need to make an RESTful API call to GGG's server with some variables, namely your account name and your POESESSIONID. The last one is basically a temporary password which is set as a cookie in your browser when you log in to the Path of Exile official website. If these 2 variables are correct, the server will send you back 1 giant JSON object with all the items in this account's stash."
+                            "body" : "To start, you'll need to make an <strong>RESTful API</strong> call to GGG's server with some variables, namely your account name and your POESESSIONID. The last one is basically a temporary password which is set as a cookie in your browser when you log in to the Path of Exile official website. If these 2 variables are correct, the server will send you back 1 giant JSON object with all the items in this account's stash."
+                        }
+                    },
+                    {
+                        "component" : "media",
+                        "_uid": "1d5dad86b6a38169f7ff005a9b31ae9a944aa31d",
+                        "data" : {
+                            "desktopImg" : "/images/poe/poe_screen1_desktop.jpg",
+                            "mobileImg" : "/images/poe/poe_screen1_mobile.jpg"
                         }
                     },
                     {
@@ -163,7 +171,7 @@
                         "_uid": "2f4dad77e8e48169a7cf116a9b31ae0f055fa20b",
                         "data" : {
                             "title" : "",
-                            "body" : "The 2nd step was to send out an API request to a different website, <a href=\"#\">PoeNinja</a>, to tell me how much currency a certain item is worth. For this, I had to sort all my items and then for each item in a category, send a request to the PoeNinja API which would return an object with some info, including the current price. I then assigned this price to my own items and now I could render it in the frontend. I also created a sort by currency function and a sort alphabetically function."
+                            "body" : "The 2nd step was to send out an API request to a different website, <a href=\"https://poe.ninja\" target=\"_blank\" rel=\"noopener noreferrer\">PoeNinja</a>, to tell me how much currency a certain item is worth. For this, I had to sort all my items and then for each item in a category, send a request to the PoeNinja API which would return an object with some info, including the current price. I then assigned this price to my own items and now I could render it in the frontend. I also created a sort by currency function and a sort alphabetically function."
                         }
                     },
                     {
@@ -180,7 +188,7 @@
                         "_uid": "2f4dad77e8e48759a7cf106a9b31ae0f055fa30b",
                         "data" : {
                             "title" : "The river",
-                            "body" : "The last thing I wanted was to be able to see what certain items were worth that are dynamic. Some items can roll with a range of modifiers on them, which can make them quite unique. For this I had to follow the river; a continuous data stream that gets updated almost every second. This river is basically 1 giant JSON object which holds all items that were added or updated during the previous river update. I wrote a pattern matching function to check my item and look if there is a similar item in the river, and then estimate what it is worth. The results were updated in the frontend with an AJAX call."
+                            "body" : "The last thing I wanted was to be able to see what certain items were worth that are dynamic. Some items can roll with a range of modifiers on them, which can make them quite unique. For this I had to follow the river; a continuous data stream that gets updated almost every second. This river is basically 1 giant JSON object which holds all items that were added or updated during the previous river update. I wrote a pattern matching function to check my item and look if there is a similar item in the river, and then estimate what it is worth. The results were updated in the frontend with an <strong>AJAX call</strong>."
                         }
                     }
                 ]
@@ -212,7 +220,23 @@
                         "_uid": "2f4dad77e8e48759a7cf106a9b31ae1f155fa30b",
                         "data" : {
                             "title" : "More officers",
-                            "body" : "The Dutch army wanted to get more people interested in becoming an officer of the army. For this they launched a campaign in which they recorded 3 different officers in a Spotify podcast, telling their experiences and explaining what their job entails. For this, I had to create an XML feed for each podcast to deliver to Spotify."
+                            "body" : "The Dutch army wanted to get more people interested in becoming an officer of the army. For this they launched a campaign in which they recorded 3 different officers in a <strong>Spotify podcast</strong>, telling their experiences and explaining what their job entails. For this, I had to create an XML feed for each podcast to deliver to Spotify."
+                        }
+                    },
+                    {
+                        "component" : "media",
+                        "_uid": "2f4dad86b6a38169a7cf005a9b31ae9a155aa31d",
+                        "data" : {
+                            "desktopImg" : "/images/defensie_officier/defensie_officier_screen1_desktop.jpg",
+                            "mobileImg" : "/images/defensie_officier/defensie_officier_screen1_mobile.jpg"
+                        }
+                    },
+                    {
+                        "component" : "paragraph",
+                        "_uid": "2f4dad77e8b48759a7cf989b9b31ae1f155fa30b",
+                        "data" : {
+                            "title" : "",
+                            "body" : "The first idea for the background animation was to use a canvas and animate 2 lines moving up and down, like a voice recording. But that proved to be too difficult. So we used a different approach, which is a <a href=\"https://airbnb.design/lottie/\" target=\"_blank\" rel=\"noopener noreferrer\">Lottie animation.</a>"
                         }
                     }
                 ]
@@ -241,10 +265,10 @@
                     },
                     {
                         "component" : "paragraph",
-                        "_uid": "2f4dad77e8e48711a7cf106a9b31ae1f155fa90b",
+                        "_uid": "2f4dad77e8e48711a7cf106a9b31ae1f155fa88e",
                         "data" : {
                             "title" : "From IT to Accountancy",
-                            "body" : "Accenture wanted a new and refresing recruitment site as their own had been performing less than what Accenture wanted. For this, they asked us to create their recruitment site to improve their applicant conversion."
+                            "body" : "Accenture wanted a new and refresing recruitment site as their own had been performing less than what Accenture wanted. For this, they asked Maximum to create their recruitment site to improve their applicant conversion."
                         }
                     },
                     {
@@ -259,13 +283,13 @@
                                 "Create all animations",
                                 "Test the frontend and backend in different browsers and different devices and write fallbacks where needed",
                                 "Improve UX after testing and feedback from client",
-                                "Implement tracking"
+                                "Implement Google Tracking"
                             ]
                         }
                     },
                     {
                         "component" : "paragraph",
-                        "_uid": "2f4dad77e8e48711a7cf106a9b31ae1f155fa90b",
+                        "_uid": "2f4dad77e8e487aba7cf110b9b31ae1f155fa90b",
                         "data" : {
                             "title" : "Pretty purple",
                             "body" : "The site is actually a lot bigger than it first looks, which was quite the challenge during development. A lot of things are intertwined and both frontend and backend had to make sure everything fit, was logical and connected."
@@ -318,7 +342,7 @@
                         "_uid": "2f4dad77e8e98765a7cf190a9b31bb1f155fa90b",
                         "data" : {
                             "title" : "The central bank of the Netherlands",
-                            "body" : "De Nederlandse Bank or DNB is an independent public body and exercises supervision of financial institutions. To attract more applicants, DNB asked us to create a recruitment website."
+                            "body" : "De Nederlandse Bank or DNB is an independent public body and exercises supervision of financial institutions. To attract more applicants, DNB asked Maximum to create a recruitment website."
                         }
                     },
                     {
@@ -331,9 +355,9 @@
                                 "Mobile first development",
                                 "Develop all frontend JavaScript",
                                 "Create all animations",
-                                "Test the frontend and backend in different browsers and different devices and write fallbacks where needed",
+                                "Test the frontend and backend in different browsers and different devices",
                                 "Improve UX after testing and feedback from client",
-                                "Implement tracking"
+                                "Implement Google Tracking"
                             ]
                         }
                     },
@@ -359,7 +383,7 @@
                         "_uid": "2f4dad88f8f98765a7cf190a9b31bb1e445aa90b",
                         "data" : {
                             "title" : "",
-                            "body" : "One small detail was that the site had to work perfectly as well in Internet Explorer 11. While we do not support this browser anymore, DNB asked us specifically for IE11 support, seeing as it still one of their most used browsers."
+                            "body" : "One small detail was that the site had to work perfectly as well in <strong>Internet Explorer 11</strong>. While we do not support this browser anymore, DNB asked Maximum specifically for IE11 support, seeing as it still one of their most used browsers."
                         }
                     }
                 ]
@@ -399,7 +423,7 @@
                         "_uid": "2f4dad88f8f98765a7cf190a9b31bb1e445bb80b",
                         "data" : {
                             "title" : "",
-                            "body" : "This campaign page is made as a fullscreen one-pager. The page is split into sections which are fullscreen on mobile and desktop. Each section is a different aspect of what to expect as a combatant."
+                            "body" : "This campaign page is made as a <strong>fullscreen one-pager</strong>. The page is split into sections which are fullscreen on mobile and desktop. Each section is a different aspect of what to expect as a combatant."
                         }
                     },
                     {
@@ -414,7 +438,7 @@
                                 "Create all animations",
                                 "Test the frontend and backend in different browsers and different devices and write fallbacks where needed",
                                 "Improve UX after testing and feedback from client",
-                                "Implement tracking"
+                                "Implement Google Tracking"
                             ]
                         }
                     },
@@ -440,7 +464,7 @@
                         "_uid": "2f4dad99a8c98745a7aa880a9b31bb1e445aa90b",
                         "data" : {
                             "title" : "Portrait mode",
-                            "body" : "The Dutch army also had a campaign running on social media such as Instagram, in which they posted short videos in portrait mode. They asked us if we can build a video player which would support these types of videos. I made a custom video modal player with video controls and acting as a slider."
+                            "body" : "The Dutch army also had a campaign running on social media such as Instagram, in which they posted short videos in portrait mode. They asked Maximum if we can build a video player which would support these types of videos. I made a <strong>custom video modal player</strong> with video controls and acting as a slider."
                         }
                     },
                     {

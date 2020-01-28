@@ -10,9 +10,7 @@ const Paragraph = (props) => {
     return (
         <div className="component cms-content js-viewport-anim has-anim">
             {title}
-            <p>
-                {props.block.data.body}
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: props.block.data.body }}></p>
         </div>
     );
 };

@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="d0a789f5-7c33-4f4d-b13a-433ee0eb4707" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Paragraph/Paragraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paragraph/Paragraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Project/ProjectDetail/ProjectDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project/ProjectDetail/ProjectDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/partials/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/partials/animations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_cms-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_cms-content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sass/components/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sass/components/_media.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +90,8 @@
       <workItem from="1579678003766" duration="177000" />
       <workItem from="1579717420181" duration="8375000" />
       <workItem from="1579886172891" duration="15932000" />
-      <workItem from="1580148364878" duration="7866000" />
+      <workItem from="1580148364878" duration="7923000" />
+      <workItem from="1580231673312" duration="7318000" />
     </task>
     <servers />
   </component>
@@ -103,10 +115,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1578695691806" />
-    <state x="498" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578861817797">
+    <state x="498" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580236601509">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="498" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1578861817797" />
+    <state x="498" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1580236601509" />
     <state x="629" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578601123010">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

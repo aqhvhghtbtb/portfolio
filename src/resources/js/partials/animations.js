@@ -22,7 +22,7 @@ function animateElements() {
     }
 
     components.forEach((component) => {
-        if (component.getBoundingClientRect().top <= window.innerHeight * 0.9 && component.getBoundingClientRect().top > 0) {
+        if (component.getBoundingClientRect().top <= window.innerHeight * 0.95 && component.getBoundingClientRect().top > 0) {
             component.classList.add('is-in-viewport');
             setTimeout(() => {
                 component.classList.remove('has-anim');
