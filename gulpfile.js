@@ -1,16 +1,17 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-// const uglify = require('gulp-uglify');
 const autoprefixer = require('gulp-autoprefixer');
 const cssnano = require('gulp-cssnano');
 const gulpIf = require('gulp-if');
 const concat = require('gulp-concat');
 const order = require('gulp-order');
+const uglify = require('gulp-uglify-es').default;
 
 gulp.task('sass', function(){
     return gulp.src('src/resources/sass/**/*.scss')
                .pipe(sass()) // Converts Sass to CSS with gulp-sass
                .pipe(autoprefixer())
+               .pipe(cssnano())
                .pipe(gulp.dest('public/css/'))
 });
 
@@ -24,11 +25,16 @@ gulp.task('js', function(){
                .pipe(gulp.dest('public/js/'))
 });
 
-// gulp.task('build', function() {
-//     return gulp.src(['resources/sass/**/*.scss'])
-//         .pipe(gulpIf('*css', cssnano()))
-//         .pipe(gulp.dest('public/css'))
-// });
+gulp.task('js-build', function() {
+    return gulp.src(['src/resources/js/**/*.js', 'resources/js/*.js'])
+               .pipe(order([
+                               "partials/*.js",
+                               "main.js",
+                           ]))
+               .pipe(concat('main.js'))
+               .pipe(uglify())
+               .pipe(gulp.dest('public/js/'))
+});
 
 // gulp.task('build', function(){
 //     return gulp.src(['resources/sass/**/*.sass', 'resources/js/**/*.js'])

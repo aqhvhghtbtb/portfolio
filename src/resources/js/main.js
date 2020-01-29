@@ -1,5 +1,4 @@
-document.addEventListener("reactReady",function(){
-    console.log('kek');
+document.addEventListener("DOMContentLoaded", function() {
     bindEvents();
     animateElements();
 });

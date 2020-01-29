@@ -1,8 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Link} from "react-router-dom";
 
-function Header(props) {
-    console.log('header')
+function Header() {
     return (
         <div className="header">
             <div className="header__content">

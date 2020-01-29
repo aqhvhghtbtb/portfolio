@@ -24,7 +24,7 @@
     &__byline {
         @include responsiveFont(24);
         overflow: hidden;
-        padding-bottom: 2px;
+        padding-bottom: 4px;
 
         & .header__text {
             opacity: 0;

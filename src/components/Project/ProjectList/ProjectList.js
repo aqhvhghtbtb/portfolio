@@ -5,7 +5,6 @@ const ProjectList = (props) => {
     useEffect(() => {
         const renderProjectList = new Event('initAnimations');
         document.dispatchEvent(renderProjectList);
-        console.log('useEffect renderProjectList')
     });
 
     return (

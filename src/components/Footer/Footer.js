@@ -26,7 +26,6 @@ class Footer extends React.Component {
     }
 
     toggleModalBg() {
-        console.log('toggleModalBg');
         document.body.classList.toggle('overlay-is-active', this.state.isActive);
     }
 
@@ -35,7 +34,6 @@ class Footer extends React.Component {
     }
 
     render() {
-        console.log('render footer')
         const socialList = this.props.data.socialList.items.map((item, key) =>
               <li key={this.generateUniqueKey(item.url)} className="footer__contact-item">
                   <a href={item.url} className={"footer__contact-link footer__contact-link--" + item.class} target="_blank" rel="noopener noreferrer">

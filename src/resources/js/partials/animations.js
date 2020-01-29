@@ -1,6 +1,5 @@
 function bindEvents() {
     document.addEventListener("initAnimations",function(){
-        console.log('burbur');
         animateElements();
     });
 

@@ -1,6 +1,5 @@
 function bindEvents() {
     document.addEventListener("initAnimations",function(){
-        console.log('burbur');
         animateElements();
     });
 
@@ -31,8 +30,7 @@ function animateElements() {
     })
 }
 
-document.addEventListener("reactReady",function(){
-    console.log('kek');
+document.addEventListener("DOMContentLoaded", function() {
     bindEvents();
     animateElements();
 });
