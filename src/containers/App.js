@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route, Switch, useParams} from "react-router-dom";
 
 import Aux from "../hoc/Aux";
 import Header from "../components/Header/Header";
@@ -30,6 +30,11 @@ class App extends React.Component {
         const ProjectDetailWrapper = ({ match, location }) => {
             let matchingData = this.findDataById(match.params.id, data.main);
 
+            if(matchingData.length === 0) {
+                return (
+                    <ProjectListWrapper/>
+                )
+            }
 
             let content = matchingData[0];
 
@@ -50,7 +55,8 @@ class App extends React.Component {
                     <Header/>
                     <Switch>
                         <Route exact path="/" component={ProjectListWrapper} />
-                        <Route exact path="/project/:id" component={ProjectDetailWrapper} />
+                        <Route exact path="*/project/:id" component={ProjectDetailWrapper} />
+                        <Route path="*" component={ProjectListWrapper} />
                         <Route component={ErrorWrapper} />
                     </Switch>
                     <Footer data={data.footer}/>

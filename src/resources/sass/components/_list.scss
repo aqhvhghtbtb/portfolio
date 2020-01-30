@@ -70,6 +70,7 @@
         color: $sec;
         @include font-pri-bold;
         transition: color 0.2s;
+        font-weight: bold;
     }
 
     &__text {
