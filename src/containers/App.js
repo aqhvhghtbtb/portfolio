@@ -44,15 +44,13 @@ class App extends React.Component {
             );
         };
 
-        const baseURL = process.env.PUBLIC_URL;
-
         return (
             <Aux>
                 <Router>
                     <Header/>
                     <Switch>
-                        <Route exact path={baseURL + "/"} component={ProjectListWrapper} />
-                        <Route exact path={baseURL + "/project/:id"} component={ProjectDetailWrapper} />
+                        <Route exact path="/" component={ProjectListWrapper} />
+                        <Route exact path="/project/:id" component={ProjectDetailWrapper} />
                         <Route component={ErrorWrapper} />
                     </Switch>
                     <Footer data={data.footer}/>
